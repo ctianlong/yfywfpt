@@ -17,7 +17,10 @@
 		<yfy-api.version>0.0.1-SNAPSHOT</yfy-api.version>
 		<yfy-dao.version>0.0.1-SNAPSHOT</yfy-dao.version>
 		<yfy-service.version>0.0.1-SNAPSHOT</yfy-service.version>
-		<yfy.web.version>0.0.1-SNAPSHOT</yfy.web.version>
+		<yfy-web.version>0.0.1-SNAPSHOT</yfy-web.version>
+		<yfy-mq.version>0.0.1-SNAPSHOT</yfy-mq.version>
+		<yfy-memcach.version>0.0.1-SNAPSHOT</yfy-memcach.version>
+		<yfy-quartz.version>0.0.1-SNAPSHOT</yfy-quartz.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -42,7 +45,23 @@
 				<artifactId>yfy-web</artifactId>
 				<version>${yfy-web.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.newtouch.yfy</groupId>
+				<artifactId>yfy-mq</artifactId>
+				<version>${yfy-mq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.newtouch.yfy</groupId>
+				<artifactId>yfy-memcach</artifactId>
+				<version>${yfy-memcach.version}</version>
+			</dependency>
+			<dependency>
+				 <groupId>com.newtouch.yfy</groupId>
+				  <artifactId>yfy-quartz</artifactId>
+				  <version>${yfy-quartz.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<packaging>pom</packaging>
+
 </project>
