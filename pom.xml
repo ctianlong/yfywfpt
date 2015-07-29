@@ -15,5 +15,9 @@
 	</properties>
   <modules>
     <module>yfy-parent</module>
+    <module>yfy-api</module>
+    <module>yfy-dao</module>
+    <module>yfy-service</module>
+    <module>yfy-web</module>
   </modules>
 </project>
