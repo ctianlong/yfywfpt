@@ -42,6 +42,10 @@
 			<groupId>com.newtouch.yfy</groupId>
 			<artifactId>yfy-quartz</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-webservice</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>yfy-web</finalName>

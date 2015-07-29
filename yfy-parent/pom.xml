@@ -21,6 +21,7 @@
 		<yfy-mq.version>0.0.1-SNAPSHOT</yfy-mq.version>
 		<yfy-memcach.version>0.0.1-SNAPSHOT</yfy-memcach.version>
 		<yfy-quartz.version>0.0.1-SNAPSHOT</yfy-quartz.version>
+		<yfy-webservice.version>0.0.1-SNAPSHOT</yfy-webservice.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -59,6 +60,11 @@
 				 <groupId>com.newtouch.yfy</groupId>
 				  <artifactId>yfy-quartz</artifactId>
 				  <version>${yfy-quartz.version}</version>
+			</dependency>
+			<dependency>
+				 <groupId>com.newtouch.yfy</groupId>
+				  <artifactId>yfy-webservice</artifactId>
+				  <version>${yfy-webservice.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
