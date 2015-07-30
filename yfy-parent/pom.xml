@@ -131,5 +131,10 @@
 			<artifactId>sqljdbc4</artifactId>
 			<version>${sqljdbc4.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis-jaxrpc</artifactId>
+			<version>1.4</version>
+		</dependency>
 	</dependencies>
 </project>
