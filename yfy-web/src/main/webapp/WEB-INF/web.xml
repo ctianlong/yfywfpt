@@ -109,7 +109,11 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath*:controller/dispatcher-servlet.xml</param-value>
+			<param-value>
+						classpath*:controller/dispatcher-servlet.xml,
+						 classpath*:quartz/quartzJob.xml <!-- 启动定时任务 -->
+			</param-value>
+			
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

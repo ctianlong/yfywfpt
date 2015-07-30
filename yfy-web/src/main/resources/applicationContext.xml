@@ -5,14 +5,14 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 	
 	<!-- common Start -->
-	<import resource="common/applicationContext-scan.xml" />
+	<!-- <import resource="common/applicationContext-scan.xml" />
 	<import resource="common/applicationContext-common.xml" />
 	<import resource="common/applicationContext-datasource.xml" />
-	<import resource="common/applicationContext-properties.xml" />
+	<import resource="common/applicationContext-properties.xml" /> -->
 	
 	<!-- repository Start -->
-	<import resource="dao/applicationContext-jpa.xml" />
-	<import resource="tx/applicationContext-tx.xml" />
+	<!-- <import resource="dao/applicationContext-jpa.xml" />
+	<import resource="tx/applicationContext-tx.xml" /> -->
 	<!-- repository End -->
 
 </beans>
