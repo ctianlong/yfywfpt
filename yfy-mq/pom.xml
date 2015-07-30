@@ -21,5 +21,9 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-dao</artifactId>
+		</dependency>
 	</dependencies>
 </project>

@@ -1,0 +1,142 @@
+/**
+ * BookLocator.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package com.yfy.webservice.alipaybook;
+
+public class BookLocator extends org.apache.axis.client.Service implements com.yfy.webservice.alipaybook.Book {
+ 
+    public BookLocator() {
+    }
+ 
+
+    public BookLocator(org.apache.axis.EngineConfiguration config) {
+        super(config);
+    }
+
+    public BookLocator(java.lang.String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+        super(wsdlLoc, sName);
+    }
+
+    // Use to get a proxy class for BookSoap
+    private java.lang.String BookSoap_address = "http://160.160.160.57:9003/WebBooking.asmx";
+
+    public java.lang.String getBookSoapAddress() {
+        return BookSoap_address;
+    }
+
+    // The WSDD service name defaults to the port name.
+    private java.lang.String BookSoapWSDDServiceName = "BookSoap";
+
+    public java.lang.String getBookSoapWSDDServiceName() {
+        return BookSoapWSDDServiceName;
+    }
+
+    public void setBookSoapWSDDServiceName(java.lang.String name) {
+        BookSoapWSDDServiceName = name;
+    }
+
+    public com.yfy.webservice.alipaybook.BookSoap getBookSoap() throws javax.xml.rpc.ServiceException {
+       java.net.URL endpoint;
+        try {
+            endpoint = new java.net.URL(BookSoap_address);
+        }
+        catch (java.net.MalformedURLException e) {
+            throw new javax.xml.rpc.ServiceException(e);
+        }
+        return getBookSoap(endpoint);
+    }
+
+    public com.yfy.webservice.alipaybook.BookSoap getBookSoap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+        try {
+        	com.yfy.webservice.alipaybook.BookSoapStub _stub = new com.yfy.webservice.alipaybook.BookSoapStub(portAddress, this);
+            _stub.setPortName(getBookSoapWSDDServiceName());
+            return _stub;
+        }
+        catch (org.apache.axis.AxisFault e) {
+            return null;
+        }
+    }
+
+    public void setBookSoapEndpointAddress(java.lang.String address) {
+        BookSoap_address = address;
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        try {
+            if (com.yfy.webservice.alipaybook.BookSoap.class.isAssignableFrom(serviceEndpointInterface)) {
+                com.yfy.webservice.alipaybook.BookSoapStub _stub = new com.yfy.webservice.alipaybook.BookSoapStub(new java.net.URL(BookSoap_address), this);
+                _stub.setPortName(getBookSoapWSDDServiceName());
+                return _stub;
+            }
+        }
+        catch (java.lang.Throwable t) {
+            throw new javax.xml.rpc.ServiceException(t);
+        }
+        throw new javax.xml.rpc.ServiceException("There is no stub implementation for the interface:  " + (serviceEndpointInterface == null ? "null" : serviceEndpointInterface.getName()));
+    }
+
+    /**
+     * For the given interface, get the stub implementation.
+     * If this service has no port for the given interface,
+     * then ServiceException is thrown.
+     */
+    public java.rmi.Remote getPort(javax.xml.namespace.QName portName, Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
+        if (portName == null) {
+            return getPort(serviceEndpointInterface);
+        }
+        java.lang.String inputPortName = portName.getLocalPart();
+        if ("BookSoap".equals(inputPortName)) {
+            return getBookSoap();
+        }
+        else  {
+            java.rmi.Remote _stub = getPort(serviceEndpointInterface);
+            ((org.apache.axis.client.Stub) _stub).setPortName(portName);
+            return _stub;
+        }
+    }
+
+    public javax.xml.namespace.QName getServiceName() {
+        return new javax.xml.namespace.QName("http://WebBooking.com/", "Book");
+    }
+
+    private java.util.HashSet ports = null;
+
+    public java.util.Iterator getPorts() {
+        if (ports == null) {
+            ports = new java.util.HashSet();
+            ports.add(new javax.xml.namespace.QName("http://WebBooking.com/", "BookSoap"));
+        }
+        return ports.iterator();
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        
+if ("BookSoap".equals(portName)) {
+            setBookSoapEndpointAddress(address);
+        }
+        else 
+{ // Unknown Port Name
+            throw new javax.xml.rpc.ServiceException(" Cannot set Endpoint Address for Unknown Port" + portName);
+        }
+    }
+
+    /**
+    * Set the endpoint address for the specified port name.
+    */
+    public void setEndpointAddress(javax.xml.namespace.QName portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+        setEndpointAddress(portName.getLocalPart(), address);
+    }
+
+}

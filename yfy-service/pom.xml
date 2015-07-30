@@ -25,5 +25,13 @@
 			<groupId>com.newtouch.lion</groupId>
 			<artifactId>com.newtouch.lion-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-dao</artifactId>
+		</dependency>
 	</dependencies>
 </project>

@@ -21,5 +21,17 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-mq</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-memcach</artifactId>
+		</dependency>
 	</dependencies>
 </project>
