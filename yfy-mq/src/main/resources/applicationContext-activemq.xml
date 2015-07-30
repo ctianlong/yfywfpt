@@ -37,12 +37,12 @@
 		<constructor-arg index="0" value="queue_feeSys_to_eSign" />
 	</bean>
 	<!-- 5.消息发送者 -->
-	<bean id="QueueSender" class="com.newtouch.lion.activemq.queue.QueueSender">
+	<bean id="QueueSender" class="com.yfy.mq.queue.QueueSender">
 		<constructor-arg ref="queue_feeSys_to_eSign" />
 		<property name="jmsTemplate" ref="jmsTemplate" />
 	</bean>
 	<!-- 6.队列监听器 -->
-	<bean id="QueueReceiverListener" class="com.newtouch.lion.activemq.queue.QueueReceiverListener">
+	<bean id="QueueReceiverListener" class="com.yfy.mq.queue.QueueReceiverListener">
 	</bean>
 	<!-- 7.队列监听器的容器 -->
 	<bean id="QueueReceiverContainer"
