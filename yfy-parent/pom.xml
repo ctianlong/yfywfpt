@@ -22,6 +22,14 @@
 		<yfy-memcach.version>0.0.1-SNAPSHOT</yfy-memcach.version>
 		<yfy-quartz.version>0.0.1-SNAPSHOT</yfy-quartz.version>
 		<yfy-webservice.version>0.0.1-SNAPSHOT</yfy-webservice.version>
+		<sl4j-simple.version>1.6.1</sl4j-simple.version>
+		<axis.version>1.4</axis.version>
+		<commons-discovery.version>0.2</commons-discovery.version>
+		<sqljdbc4.version>4.0</sqljdbc4.version>
+		<memcached.version>2.6.3</memcached.version>
+		<activemq.version>5.7.0</activemq.version>
+		<activemq-release.version>release-2.1</activemq-release.version>
+		<spring-jms.version>3.1.2.RELEASE</spring-jms.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -57,17 +65,71 @@
 				<version>${yfy-memcach.version}</version>
 			</dependency>
 			<dependency>
-				 <groupId>com.newtouch.yfy</groupId>
-				  <artifactId>yfy-quartz</artifactId>
-				  <version>${yfy-quartz.version}</version>
+				<groupId>com.newtouch.yfy</groupId>
+				<artifactId>yfy-quartz</artifactId>
+				<version>${yfy-quartz.version}</version>
 			</dependency>
 			<dependency>
-				 <groupId>com.newtouch.yfy</groupId>
-				  <artifactId>yfy-webservice</artifactId>
-				  <version>${yfy-webservice.version}</version>
+				<groupId>com.newtouch.yfy</groupId>
+				<artifactId>yfy-webservice</artifactId>
+				<version>${yfy-webservice.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<packaging>pom</packaging>
-
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>activemq</groupId>
+			<artifactId>activemq</artifactId>
+			<version>${activemq-release.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+				<artifactId>spring-jms</artifactId>
+				<version>${spring-jms.version}</version>
+			</dependency>
+			<dependency>
+			<groupId>com.danga</groupId>
+			<artifactId>memcached</artifactId>
+			<version>${memcached.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${sl4j-simple.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>${axis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>${commons-discovery.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>${sqljdbc4.version}</version>
+		</dependency>
+	</dependencies>
 </project>
