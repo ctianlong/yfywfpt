@@ -9,23 +9,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.newtouch.yfy.api.AppoResources;
-import com.newtouch.yfy.api.Dept;
-import com.newtouch.yfy.service.ReadDBService;
-
 public class BookingJobTask {
-
 	/**
 	 * 业务逻辑处理
 	 */
 	@Autowired
 	ReadDBService readDBServiceImpl;
+	@Autowired
+	CheckAuthorityfyService checkAuthorityfyServiceImpl;
 
-	private ParseXml_YY07 xmlp07 = new ParseXml_YY07();
-
-	private ParseXml_YY02 xmlp02 = new ParseXml_YY02();
-
-	private BookSoapProxy proxy = new BookSoapProxy();
 
 	protected void execute() throws RemoteException, SQLException {
 
@@ -33,10 +25,10 @@ public class BookingJobTask {
 		System.out.println("***定时计划test执行...***" + System.currentTimeMillis());
 
 		// YYSendLab("YY07",YY07Str("0"));
-		// YYSendLab("YY07",YY07Str("1"));
-		// YYSendLab("YY07",YY07Str("2"));
+		 //YYSendLab("YY07",YY07Str("1"));
+		 // YYSendLab("YY07",YY07Str("2"));
 		// YY02Test();
-		System.out.println();
+		//testAuthorityfy();
 	}
 
 	/**
@@ -58,13 +50,15 @@ public class BookingJobTask {
 	}
 
 	private void YYSendLab(String callType, String xmlStr) {
-		String yySendLab = "<rows> <row hospital='1' hospitalname='上海市第一妇婴保健院' dept_code='2106019' dept_name='生殖医学科' dept_describe='' DocNum='3' /></rows>";
+		String yySendLab = "";
+		YY07Map xmlp07 = new YY07Map();
+		BookSoapProxy proxy = new BookSoapProxy();
 		try {
-			// yySendLab = proxy.YYSendLab(callType, xmlStr);
+			yySendLab = proxy.YYSendLab(callType, xmlStr);
 			System.out.println(yySendLab);
-			List<Dept> list = xmlp07.parseXml(yySendLab);
+			List<Dept> list = xmlp07.parseStrToList(yySendLab);
 			for (Dept dept : list) {
-				readDBServiceImpl.writeToMysqlYY07(dept);
+				readDBServiceImpl.dowriteToMysqlYY07(dept);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -72,7 +66,14 @@ public class BookingJobTask {
 	}
 
 	public static void main(String[] args) {
-
+		/* BookSoapProxy proxy1 = new BookSoapProxy();
+		 try {
+			System.out.println(proxy1.YYSendLab("YY07", YY07Str("2"))+"@@");
+			System.out.println(proxy1.YYSendLab("YY07", YY07Str("0"))+"##");
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 		// System.out.println(YY02Str("0","2015-7-18","2015-7-31","0102003","1188","","微信"));
 
 	}
@@ -80,7 +81,7 @@ public class BookingJobTask {
 	public Boolean YY02Test() throws SQLException, RemoteException {
 		List<Dept> list = readDBServiceImpl.getDeptData();
 		String str[] = nowdate();
-		ParseXml_YY02 xmlp = new ParseXml_YY02();
+		YY02Map xmlp = new YY02Map();
 		// ParseXml_YY07 xmlp=new ParseXml_YY07();
 
 		BookSoapProxy proxy = new BookSoapProxy();
@@ -91,9 +92,9 @@ public class BookingJobTask {
 							map.getDeptcode()));
 			System.out.println(yySendLab);
 			//
-			List<AppoResources> appolist = xmlp.parseXml(yySendLab);
+			List<AppoResources> appolist = xmlp.parseStrToList(yySendLab);
 			for (AppoResources appoResources : appolist) {
-				readDBServiceImpl.writeToMysqlYY02(appoResources);
+				readDBServiceImpl.dowriteToMysqlYY02(appoResources);
 			}
 		}
 
@@ -129,5 +130,14 @@ public class BookingJobTask {
 		str.append("' patfrom='");
 		str.append("' cancelled='false'/></rows>");
 		return str.toString();
+	}
+	
+	public  void testAuthorityfy() throws Throwable{
+		Authorityfy authorityfy = new Authorityfy();
+		authorityfy.setHashKey("33199f9e-13c3-4e88-b696-534ac8d8c7a2");
+		authorityfy.setAlipayID(null);
+		authorityfy.setAgreementID(null);
+		Boolean flag = checkAuthorityfyServiceImpl.findHashKey(authorityfy);
+		System.out.println(flag); 
 	}
 }

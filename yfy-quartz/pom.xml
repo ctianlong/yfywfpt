@@ -33,5 +33,9 @@
 			<groupId>com.newtouch.yfy</groupId>
 			<artifactId>yfy-service</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.newtouch.yfy</groupId>
+			<artifactId>yfy-webservice</artifactId>
+		</dependency>
 	</dependencies>
 </project>

@@ -11,5 +11,5 @@
     
     <!--下面的class属性值一定要跟你项目中服务实现类的包路径完全一致-->
     <jaxws:endpoint id="YYMethod" implementor="com.yfy.webservice.YuYueImpl" address="/YYInter" />
-	
+	 
 </beans>

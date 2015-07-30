@@ -1,13 +1,14 @@
 package com.newtouch.yfy.common;
 
 import java.io.StringReader;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,58 +22,95 @@ public class YY02Map {
 	
 	   
 	
-	public static Map<String, Object>  parseStrToMap(String strXml) {
+	public List<AppoResources>  parseStrToList(String strXml) {
+			/**日志*/
+			final Logger logger=LoggerFactory.getLogger(super.getClass());
 
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-	       try {
-	    	   StringReader sr = new StringReader(strXml);  
-			   InputSource is = new InputSource(sr); 
-			   
-	           DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			List<AppoResources> list = new ArrayList<AppoResources>();
+		      
+			try {
+		    	   StringReader sr = new StringReader(strXml);  
+				   InputSource is = new InputSource(sr); 
+				   
+		           DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-	           DocumentBuilder builder = factory.newDocumentBuilder();
+		           DocumentBuilder builder = factory.newDocumentBuilder();
 
-	           Document document = builder.parse(is);
+		           Document document = builder.parse(is);
 
-	           Element root = document.getDocumentElement();
+		           Element root = document.getDocumentElement();
 
-	           NodeList nodeList = root.getChildNodes();
-				 
-				//String attValues[]=new String[nodeList.getLength()];  //锟斤拷锟斤拷值
-	           if (null != root) {
+		           NodeList nodeList = root.getChildNodes();
+					 
+					//String attValues[]=new String[nodeList.getLength()];  //锟斤拷锟斤拷值
+		           logger.info(root.getNodeName());
+		           if (null != root) {
 
+		              for (int j = 0; j < nodeList.getLength(); j++) {
 
-	                  Node child = nodeList.item(0);
+		                  Node child = nodeList.item(j);
+		                  
+		                  AppoResources appoResources = new AppoResources();
 
-	                if (child.getNodeType() == Node.ELEMENT_NODE) {
-	                	 
-	                	String hospital = child.getAttributes().getNamedItem("hospital").getNodeValue();
-	                	String stdate = child.getAttributes().getNamedItem("stdate").getNodeValue();
-	                	String endate = child.getAttributes().getNamedItem("endate").getNodeValue();
-	                	String dept_code = child.getAttributes().getNamedItem("dept_code").getNodeValue();
-	                	String expert_code = child.getAttributes().getNamedItem("expert_code").getNodeValue();
-	                	String partcode = child.getAttributes().getNamedItem("partcode").getNodeValue();
-	                	String patfrom = child.getAttributes().getNamedItem("patfrom").getNodeValue();
-	                	String cancelled = child.getAttributes().getNamedItem("cancelled").getNodeValue();
-	                	
-	                	map.put("hospital", hospital);
-	                	map.put("stdate", stdate);
-	                	map.put("endate", endate);
-	                	map.put("dept_code", dept_code);
-	                	map.put("expert_code", expert_code);
-	                	map.put("partcode", partcode);
-	                	map.put("patfrom", patfrom);
-	                	map.put("cancelled", cancelled);
-	                }
-	              }
-	       } catch (Exception e) {
-	    	   
-	           e.printStackTrace();
-	           return null;
-	       }  
-	       return map;
-	    }
+		                  StringBuilder attValues = new StringBuilder();
+		                if (child.getNodeType() == Node.ELEMENT_NODE) {
+		                	 
+		                	appoResources.setHospitalcode(child.getAttributes().getNamedItem("hospital").getNodeValue());
+		                	appoResources.setHospitalname(child.getAttributes().getNamedItem("hospitalname").getNodeValue());
+		                	appoResources.setAppotemplateid(child.getAttributes().getNamedItem("templateid").getNodeValue());
+		                	appoResources.setAppocode(child.getAttributes().getNamedItem("comcode").getNodeValue());
+		                	appoResources.setDept1code(child.getAttributes().getNamedItem("deptl1code").getNodeValue());
+		                	appoResources.setDept1name(child.getAttributes().getNamedItem("deptl1name").getNodeValue());
+		                	appoResources.setDept2code(child.getAttributes().getNamedItem("deptl2code").getNodeValue());
+		                	appoResources.setDept2name(child.getAttributes().getNamedItem("deptl2name").getNodeValue());
+		                	appoResources.setDoctid("");
+		                	if(null==child.getAttributes().getNamedItem("doctorid")){
+		                		appoResources.setDoctcode("");
+		                	}else{
+		                		String doctorid = child.getAttributes().getNamedItem("doctorid").getNodeValue();
+		                		appoResources.setDoctcode(doctorid);
+		                	}
+		                	appoResources.setDoctname(child.getAttributes().getNamedItem("doctorname").getNodeValue());
+		                	appoResources.setExpertdegree(child.getAttributes().getNamedItem("Expert_degree").getNodeValue());
+		                	String cancelled = child.getAttributes().getNamedItem("cancelled").getNodeValue();
+							if("FALSE".equals(cancelled)){
+								appoResources.setCancelled("0");
+							}else{
+								appoResources.setCancelled("1");
+							} 
+		                	String canceltime = child.getAttributes().getNamedItem("canceltime").getNodeValue();
+		                	if("".equals(canceltime)){
+		                		
+							}else{
+								appoResources.setCanceltime(canceltime);
+							}
+		                	appoResources.setRegistertype(child.getAttributes().getNamedItem("registertype").getNodeValue());
+		                	appoResources.setAppodate(child.getAttributes().getNamedItem("date").getNodeValue());
+		                	String timestart = child.getAttributes().getNamedItem("timestart").getNodeValue();
+		                	appoResources.setAppostarttime(timestart);
+		                	String timeend = child.getAttributes().getNamedItem("timeend").getNodeValue();
+		                	appoResources.setAppoendtime(timeend);
+		                	//预约时间段 AppoPeriod
+		                	appoResources.setAppoperiod(timestart+"-"+timeend);
+		                	appoResources.setResnumber(child.getAttributes().getNamedItem("resourcenumber").getNodeValue());
+		                	appoResources.setSurplusnum(child.getAttributes().getNamedItem("num").getNodeValue());
+		                	String registerFee = child.getAttributes().getNamedItem("registerfee").getNodeValue();
+							if("".equals(registerFee)){
+							}else{
+								appoResources.setRegisterfee(registerFee);
+							}
+		                	 logger.info(attValues.toString());
+		                	 list.add(appoResources);
+		                }
+		              }
+		           }
+		       } catch (Exception e) {
+		    	   
+		           e.printStackTrace();
+		       }  
+			return list;
+		    }
+
 public static String  parseListToStr(List<AppoResources>  list ,String xml){
 		
 		StringBuilder str =new StringBuilder();
