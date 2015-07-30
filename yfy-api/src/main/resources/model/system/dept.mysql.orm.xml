@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+	version="2.0">
+	<package>com.newtouch.yfy.api</package>
+	<access>PROPERTY</access>
+	
+	<entity class="Dept">
+		<table name="dept" />
+		<attributes>
+			<id name="deptid" >
+				<column name="Deptid" unique="true" nullable="false"
+					precision="11" scale="0" insertable="false" updatable="false" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="hospitalcode">
+				<column name="HospitalCode" length="11" nullable="true"/>
+			</basic>
+			<basic name="hospitalname">
+				<column name="HospitalName" length="100" nullable="true"/>
+			</basic>
+			<basic name="deptcode">
+				<column name="DeptCode" length="20" nullable="true"/>
+			</basic>
+			<basic name="deptname">
+				<column name="DeptName" length="50" nullable="true"/>
+			</basic>
+			<basic name="partcode">
+				<column name="PartCode" length="5" nullable="true"/>
+			</basic>
+			<basic name="desc">
+				<column name="Desc1" length="100" nullable="true"/>
+			</basic>
+			<basic name="flag">
+				<column name="Flag" length="11" nullable="true"/>
+			</basic>
+			<basic name="syncdate">
+				<column name="SyncDate" length="20" nullable="true"/>
+			</basic>
+			<basic name="modifydate">
+				<column name="ModifyDate" length="20" nullable="true"/>
+			</basic>
+			<basic name="deletedate">
+				<column name="DeleteDate" length="20" nullable="true"/>
+			</basic>
+			<transient name="id"/>
+		</attributes>
+	</entity>
+	<entity class="AppoInfo">
+		<table name="appoinfo" />
+		<attributes>
+			<id name="appoInfoid" >
+				<column name="appoInfoid" unique="true" nullable="false"
+					precision="11" scale="0" insertable="false" updatable="false" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<transient name="id"/>
+		</attributes>
+	</entity>
+	<entity class="AppoResources">
+		<table name="AppoResources" />
+		<attributes>
+			<id name="id" >
+				<column name="AppoId" unique="true" nullable="false"
+					precision="11" scale="0" insertable="false" updatable="false" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="hospitalcode">
+				<column name="HospitalCode" length="11" nullable="true"/>
+			</basic>
+			<basic name="hospitalname">
+				<column name="HospitalName" length="100" nullable="true"/>
+			</basic>
+			<basic name="dept1code">
+				<column name="Dept1Code" length="20" nullable="true"/>
+			</basic>
+			<basic name="dept2name">
+				<column name="Dept2Name" length="50" nullable="true"/>
+			</basic>
+			<basic name="dept2code">
+				<column name="Dept2Code" length="20" nullable="true"/>
+			</basic>
+			<basic name="dept1name">
+				<column name="Dept1Name" length="50" nullable="true"/>
+			</basic>
+			<basic name="appotemplateid">
+				<column name="AppoTemplateId" length="20" nullable="true"/>
+			</basic>
+			<basic name="appocode">
+				<column name="AppoCode" length="10" nullable="true"/>
+			</basic>
+			<basic name="doctid">
+				<column name="Doctid" length="10" nullable="true"/>
+			</basic>
+			<basic name="doctcode">
+				<column name="DoctCode" length="10" nullable="true"/>
+			</basic>
+			<basic name="doctname">
+				<column name="DoctName" length="20" nullable="true"/>
+			</basic>
+			<basic name="expertdegree">
+				<column name="ExpertDegree" length="10" nullable="true"/>
+			</basic>
+			<basic name="cancelled">
+				<column name="Cancelled" length="11" nullable="true"/>
+			</basic>
+			<basic name="canceltime">
+				<column name="CancelTime" length="20" nullable="true"/>
+			</basic>
+			<basic name="registertype">
+				<column name="RegisterType" length="20" nullable="true"/>
+			</basic>
+			<basic name="appodate">
+				<column name="AppoDate" length="20" nullable="true"/>
+			</basic>
+			<basic name="appostarttime">
+				<column name="AppoStartTime" length="20" nullable="true"/>
+			</basic>
+			<basic name="appoendtime">
+				<column name="AppoEndTime" length="20" nullable="true"/>
+			</basic>
+			<basic name="appoperiod">
+				<column name="AppoPeriod" length="11" nullable="true"/>
+			</basic>
+			<basic name="resnumber">
+				<column name="ResNumber" length="11" nullable="true"/>
+			</basic>
+			<basic name="surplusnum">
+				<column name="SurplusNum" length="11" nullable="true"/>
+			</basic>
+			<basic name="registerfee">
+				<column name="RegisterFee" length="5" nullable="true"/>
+			</basic>
+			<basic name="syncdate">
+				<column name="SyncDate" length="20" nullable="true"/>
+			</basic>
+			<basic name="modifydate">
+				<column name="ModifyDate" length="20" nullable="true"/>
+			</basic>
+			<basic name="deletedate">
+				<column name="DeleteDate" length="20" nullable="true"/>
+			</basic>
+			<!-- <transient name="id"/> -->
+		</attributes>
+	</entity>
+	
+</entity-mappings>
