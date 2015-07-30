@@ -25,6 +25,7 @@
 	<import resource="classpath:shiro/applicationContext-shiroweb.xml" />
 	<import resource="classpath:freemarker/applicationContext-freemarker.xml" />
 	<!-- shiro End-->
+	<import resource="classpath:cxf-servlet.xml" />
 	
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>  
 </beans>

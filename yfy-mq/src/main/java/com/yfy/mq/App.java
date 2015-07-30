@@ -1,4 +1,4 @@
-package org.yfy.mq;
+package com.yfy.mq;
 
 /**
  * Hello world!
