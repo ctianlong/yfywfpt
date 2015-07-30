@@ -36,19 +36,11 @@
 		</dependency>
 		<dependency>
 			<groupId>com.newtouch.yfy</groupId>
-			<artifactId>yfy-memcach</artifactId>
+			<artifactId>yfy-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.newtouch.yfy</groupId>
 			<artifactId>yfy-quartz</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.newtouch.yfy</groupId>
-			<artifactId>yfy-webservice</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.newtouch.yfy</groupId>
-			<artifactId>yfy-dao</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

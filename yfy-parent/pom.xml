@@ -31,7 +31,8 @@
 		<activemq-release.version>release-2.1</activemq-release.version>
 		<spring-jms.version>3.1.2.RELEASE</spring-jms.version>
 		<axis-jaxrpc.version>1.4</axis-jaxrpc.version>
-		<quartz.version>2.1.1</quartz.version>
+		<quartz.version>1.6.1</quartz.version>
+		<cxf.version>2.7.3</cxf.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -139,9 +140,24 @@
 			<version>${axis-jaxrpc.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.quartz-scheduler</groupId>
-			<artifactId>quartz</artifactId>
-			<version>${quartz.version}</version>
+	  <groupId>org.opensymphony.quartz</groupId>
+		  <artifactId>quartz</artifactId>
+		  <version>${quartz.version}</version>
 		</dependency>
+		<dependency>
+		  <groupId>org.apache.cxf</groupId>
+		  <artifactId>cxf-rt-core</artifactId>
+		  <version>${cxf.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.cxf</groupId>  
+	    <artifactId>cxf-rt-frontend-jaxws</artifactId>  
+	    <version>${cxf.version}</version>  
+	</dependency>  
+	<dependency>  
+	    <groupId>org.apache.cxf</groupId>  
+	    <artifactId>cxf-rt-transports-http</artifactId>  
+	    <version>${cxf.version}</version>  
+	</dependency>    
 	</dependencies>
 </project>

@@ -31,7 +31,7 @@
 				<value>model/system/bas_system.${database.prefix}.orm.xml</value>
 				<value>model/system/bas_tasks.${database.prefix}.orm.xml</value>
 				<value>model/system/bas_reminder.${database.prefix}.orm.xml</value>
-				<value>model/system/dept.mysql.orm.xml</value>
+<!-- 				<value>model/system/dept.mysql.orm.xml</value> -->
 			</list>
 		</property>
 		<property name="jpaProperties">

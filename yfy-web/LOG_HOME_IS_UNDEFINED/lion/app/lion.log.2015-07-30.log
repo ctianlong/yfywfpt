@@ -432,3 +432,2203 @@
 				MethodTimerAdvice:  before calling method ExtendDepartmentServiceImpl.doFindDepartmentToTree at 1438218666167.
 2015-07-30 09:11:06.176 [345181994@qtp-473578347-2] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
 				MethodTimerAdvice:  method ExtendDepartmentServiceImpl.doFindDepartmentToTree cost 9 miliseconds.
+2015-07-30 15:29:07.717 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 15:29:08.216 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 15:29:08.216 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 15:29:08.216 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438241348216.
+2015-07-30 15:29:08.216 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438241348216.
+2015-07-30 15:29:08.544 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 328 miliseconds.
+2015-07-30 15:29:08.544 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 328 miliseconds.
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 15:29:08.544 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 15:29:08.560 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 15:29:08.560 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438241348560.
+2015-07-30 15:29:08.560 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438241348560.
+2015-07-30 15:29:08.622 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 62 miliseconds.
+2015-07-30 15:29:08.622 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 62 miliseconds.
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 15:29:08.622 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 15:29:09.825 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 15:29:09.825 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438241349825.
+2015-07-30 15:29:09.825 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438241349825.
+2015-07-30 15:29:09.887 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 62 miliseconds.
+2015-07-30 15:29:09.887 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 62 miliseconds.
+2015-07-30 15:29:09.887 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...
+2015-07-30 15:29:46.103 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method UserServiceImpl.doFindByUserName at 1438241386103.
+2015-07-30 15:29:46.238 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method UserServiceImpl.doFindByUserName cost 135 miliseconds.
+2015-07-30 15:29:46.262 [qtp31187401-30] INFO  com.newtouch.lion.web.shiro.realm.UserRealm -
+				username:wanglijun,userId:1
+2015-07-30 15:29:46.262 [qtp31187401-30] INFO  com.newtouch.lion.web.shiro.realm.UserRealm -
+				username:wanglijun,userId:1
+2015-07-30 15:29:46.262 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method UserServiceImpl.doFindRoles at 1438241386262.
+2015-07-30 15:29:46.340 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method UserServiceImpl.doFindRoles cost 78 miliseconds.
+2015-07-30 15:29:46.364 [qtp31187401-30] INFO  c.n.lion.admin.web.controller.IndexController -
+				isPermitted:false
+2015-07-30 15:29:46.364 [qtp31187401-30] INFO  c.n.lion.admin.web.controller.IndexController -
+				进入首页.....
+2015-07-30 15:29:46.500 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method MenuServiceImpl.doFindByUserId at 1438241386500.
+2015-07-30 15:29:46.506 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindByParentId at 1438241386506.
+2015-07-30 15:29:46.554 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindByParentId cost 48 miliseconds.
+2015-07-30 15:29:46.554 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindByUserIdAndType at 1438241386554.
+2015-07-30 15:29:46.576 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindByUserIdAndType cost 22 miliseconds.
+2015-07-30 15:29:46.613 [qtp31187401-30] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method MenuServiceImpl.doFindByUserId cost 113 miliseconds.
+2015-07-30 16:19:32.376 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 16:19:32.876 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:32.876 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:32.876 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244372876.
+2015-07-30 16:19:32.876 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244372876.
+2015-07-30 16:19:33.157 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 281 miliseconds.
+2015-07-30 16:19:33.173 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 297 miliseconds.
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:33.173 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:33.173 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244373173.
+2015-07-30 16:19:33.173 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244373173.
+2015-07-30 16:19:33.235 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 62 miliseconds.
+2015-07-30 16:19:33.235 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 62 miliseconds.
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:33.235 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:35.875 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 16:19:35.875 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438244375875.
+2015-07-30 16:19:35.875 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438244375875.
+2015-07-30 16:19:35.907 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 32 miliseconds.
+2015-07-30 16:19:35.907 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 32 miliseconds.
+2015-07-30 16:19:35.907 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...
+2015-07-30 16:19:53.883 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 16:19:54.373 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:54.373 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:54.373 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244394373.
+2015-07-30 16:19:54.388 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244394388.
+2015-07-30 16:19:54.669 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 281 miliseconds.
+2015-07-30 16:19:54.669 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 296 miliseconds.
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:54.669 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:54.685 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:19:54.685 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244394685.
+2015-07-30 16:19:54.685 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244394685.
+2015-07-30 16:19:54.747 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 62 miliseconds.
+2015-07-30 16:19:54.747 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 62 miliseconds.
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:54.747 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:19:57.353 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 16:19:57.353 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438244397353.
+2015-07-30 16:19:57.369 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438244397369.
+2015-07-30 16:19:57.386 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 17 miliseconds.
+2015-07-30 16:19:57.401 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 48 miliseconds.
+2015-07-30 16:19:57.401 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...
+2015-07-30 16:21:12.437 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 16:21:12.968 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:21:12.968 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:21:12.968 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244472968.
+2015-07-30 16:21:12.968 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244472968.
+2015-07-30 16:21:13.253 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 285 miliseconds.
+2015-07-30 16:21:13.253 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 285 miliseconds.
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:21:13.253 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:21:13.268 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:21:13.268 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244473268.
+2015-07-30 16:21:13.268 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244473268.
+2015-07-30 16:21:13.315 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 47 miliseconds.
+2015-07-30 16:21:13.331 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 63 miliseconds.
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:21:13.331 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:21:16.016 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 16:21:16.016 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438244476016.
+2015-07-30 16:21:16.016 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438244476016.
+2015-07-30 16:21:16.047 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 31 miliseconds.
+2015-07-30 16:21:16.047 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 31 miliseconds.
+2015-07-30 16:21:16.047 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...
+2015-07-30 16:24:24.571 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 16:24:25.117 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:24:25.117 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:24:25.117 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244665117.
+2015-07-30 16:24:25.117 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244665117.
+2015-07-30 16:24:25.399 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 282 miliseconds.
+2015-07-30 16:24:25.399 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 282 miliseconds.
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:24:25.399 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:24:25.414 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:24:25.414 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438244665414.
+2015-07-30 16:24:25.414 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438244665414.
+2015-07-30 16:24:25.477 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 63 miliseconds.
+2015-07-30 16:24:25.477 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 63 miliseconds.
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:24:25.477 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:24:25.492 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:24:28.301 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 16:24:28.301 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438244668301.
+2015-07-30 16:24:28.317 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438244668317.
+2015-07-30 16:24:28.333 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 16 miliseconds.
+2015-07-30 16:24:28.333 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 32 miliseconds.
+2015-07-30 16:24:28.333 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...
+2015-07-30 16:39:09.961 [main] INFO  c.n.lion.common.resource.impl.SystemMessages -
+				BUNDLE_NAME:com.newtouch.lion.common.resource.messages
+2015-07-30 16:39:10.508 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:39:10.508 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:39:10.508 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438245550508.
+2015-07-30 16:39:10.508 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438245550508.
+2015-07-30 16:39:10.820 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 312 miliseconds.
+2015-07-30 16:39:10.820 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 312 miliseconds.
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:39:10.820 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				initialize shiro permission success...
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:39:10.835 [main] INFO  c.n.l.w.s.chain.ShiroFilterChainDefinitionManager -
+				加载菜单资源进行拦截
+2015-07-30 16:39:10.835 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ShiroResouceServiceImpl.doFindAll at 1438245550835.
+2015-07-30 16:39:10.835 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ResourceServiceImpl.doFindAuthAll at 1438245550835.
+2015-07-30 16:39:10.882 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ResourceServiceImpl.doFindAuthAll cost 47 miliseconds.
+2015-07-30 16:39:10.898 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ShiroResouceServiceImpl.doFindAll cost 47 miliseconds.
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				Application = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SystemConfig = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/resource/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/parameter/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/index.htm = authc,perms["dashboard:index"]
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/role/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:39:10.898 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/group/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codelist/index.htm = authc,perms["system.codelist.index"]
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/user/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/department/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				DataGridManage = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datagrid/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/datacolumn/index.htm = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:39:10.899 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				报表设计 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/application/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单1 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				网页菜单1 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				菜单子项3 = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				SYSTEM_MONITOR = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sessions/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/memory.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				app_store = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:39:10.900 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/applicationproperty/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/notifications.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/account/calendar.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/druid/index.html = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/hibernate/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/cache/index.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/montior/jvm/thread.htm = authc
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/add.json = authc,perms["system.codetype.add"]
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:39:10.901 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/edit.json = authc,perms["sytem.codetype.edit"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/list.json = authc,perms["system.codetype.list"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/codetype/export.json = authc,perms["system.codetype.export"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/sytsem/codetype/delete.json = authc,perms["system.codetype.delete"]
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/system/icon/index.htm = authc
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/springmvc.htm = authc
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:39:10.902 [main] INFO  c.n.l.w.s.c.AbstractFilterChainDefinitionsService -
+				/demo/advisoryEvent.htm = authc
+2015-07-30 16:39:14.805 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init start...
+2015-07-30 16:39:14.805 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterCacheServiceImpl.doFindInitializedData at 1438245554805.
+2015-07-30 16:39:14.805 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  before calling method ParameterServiceImpl.doFindByCriteria at 1438245554805.
+2015-07-30 16:39:14.837 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterServiceImpl.doFindByCriteria cost 32 miliseconds.
+2015-07-30 16:39:14.852 [main] INFO  com.newtouch.lion.advice.MethodTimerAdvice -
+				MethodTimerAdvice:  method ParameterCacheServiceImpl.doFindInitializedData cost 47 miliseconds.
+2015-07-30 16:39:14.852 [main] INFO  c.n.l.l.ApplicationInitializedListenerService -
+				init end...

@@ -9,6 +9,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.newtouch.yfy.api.AppoResources;
+import com.newtouch.yfy.api.Authorityfy;
+import com.newtouch.yfy.api.Dept;
+import com.newtouch.yfy.common.YY02Map;
+import com.newtouch.yfy.common.YY07Map;
+import com.newtouch.yfy.service.CheckAuthorityfyService;
+import com.newtouch.yfy.service.ReadDBService;
+import com.yfy.webservice.alipaybook.BookSoapProxy;
+
 public class BookingJobTask {
 	/**
 	 * 业务逻辑处理
