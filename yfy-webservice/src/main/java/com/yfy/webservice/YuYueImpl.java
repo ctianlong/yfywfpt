@@ -22,7 +22,7 @@ import com.newtouch.yfy.common.ZfbXmlAnalysis;
 import com.yfy.mq.IQueueSender;
 
 
-@WebService(endpointInterface = "com.newtouch.lion.admin.web.test.webService.YuYue")
+@WebService(endpointInterface = "com.yfy.webservice.YuYue")
 public class YuYueImpl implements YuYue {
 	protected final Logger logger = LoggerFactory.getLogger(super.getClass());
 	/**
