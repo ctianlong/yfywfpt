@@ -30,6 +30,8 @@
 		<activemq.version>5.7.0</activemq.version>
 		<activemq-release.version>release-2.1</activemq-release.version>
 		<spring-jms.version>3.1.2.RELEASE</spring-jms.version>
+		<axis-jaxrpc.version>1.4</axis-jaxrpc.version>
+		<quartz.version>2.1.1</quartz.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -134,7 +136,12 @@
 		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-jaxrpc</artifactId>
-			<version>1.4</version>
+			<version>${axis-jaxrpc.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>${quartz.version}</version>
 		</dependency>
 	</dependencies>
 </project>

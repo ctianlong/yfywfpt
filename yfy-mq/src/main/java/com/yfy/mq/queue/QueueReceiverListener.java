@@ -14,7 +14,6 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.springframework.jms.listener.SessionAwareMessageListener;
 
-import com.yfy.webservice.alipaybook.BookSoapProxy;
 
 public class QueueReceiverListener implements SessionAwareMessageListener{
 	private static Logger log = Logger.getLogger(QueueReceiverListener.class);
@@ -29,7 +28,7 @@ public class QueueReceiverListener implements SessionAwareMessageListener{
 	  	/**
 		 * 需要执行的任务: 调用 预约 接口
 		 */
-		BookSoapProxy proxy = new BookSoapProxy();
+//		BookSoapProxy proxy = new BookSoapProxy();
 		/**
 		 * 将字符串转化为document.
 		 */
