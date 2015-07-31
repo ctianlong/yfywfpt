@@ -1,4 +1,4 @@
-package org.yfy.memcach.util;
+package com.yfy.memcach.util;
 
 import com.danga.MemCached.MemCachedClient;
 import com.danga.MemCached.SockIOPool;
