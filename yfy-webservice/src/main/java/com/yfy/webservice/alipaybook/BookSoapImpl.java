@@ -6,10 +6,10 @@
  */
 
 package com.yfy.webservice.alipaybook;
-  
+
 public class BookSoapImpl implements com.yfy.webservice.alipaybook.BookSoap{
     public java.lang.String YYSendLab(java.lang.String callType, java.lang.String xmlMessage) throws java.rmi.RemoteException {
         return null;
     }
 
-} 
+}

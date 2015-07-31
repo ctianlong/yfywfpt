@@ -8,10 +8,10 @@
 package com.yfy.webservice.alipaybook;
 
 public class BookLocator extends org.apache.axis.client.Service implements com.yfy.webservice.alipaybook.Book {
- 
+
     public BookLocator() {
     }
- 
+
 
     public BookLocator(org.apache.axis.EngineConfiguration config) {
         super(config);
@@ -52,7 +52,7 @@ public class BookLocator extends org.apache.axis.client.Service implements com.y
 
     public com.yfy.webservice.alipaybook.BookSoap getBookSoap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-        	com.yfy.webservice.alipaybook.BookSoapStub _stub = new com.yfy.webservice.alipaybook.BookSoapStub(portAddress, this);
+            com.yfy.webservice.alipaybook.BookSoapStub _stub = new com.yfy.webservice.alipaybook.BookSoapStub(portAddress, this);
             _stub.setPortName(getBookSoapWSDDServiceName());
             return _stub;
         }

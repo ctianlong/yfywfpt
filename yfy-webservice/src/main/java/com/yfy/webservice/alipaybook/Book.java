@@ -6,11 +6,11 @@
  */
 
 package com.yfy.webservice.alipaybook;
- 
+
 public interface Book extends javax.xml.rpc.Service {
     public java.lang.String getBookSoapAddress();
 
     public com.yfy.webservice.alipaybook.BookSoap getBookSoap() throws javax.xml.rpc.ServiceException;
 
     public com.yfy.webservice.alipaybook.BookSoap getBookSoap(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
-} 
+}

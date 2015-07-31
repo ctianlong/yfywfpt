@@ -6,8 +6,7 @@
  */
 
 package com.yfy.webservice.alipaybook;
- 
+
 public interface BookSoap extends java.rmi.Remote {
     public java.lang.String YYSendLab(java.lang.String callType, java.lang.String xmlMessage) throws java.rmi.RemoteException;
 }
- 

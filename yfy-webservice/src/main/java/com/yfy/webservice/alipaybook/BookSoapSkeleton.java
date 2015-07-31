@@ -6,12 +6,12 @@
  */
 
 package com.yfy.webservice.alipaybook;
- 
+
 public class BookSoapSkeleton implements com.yfy.webservice.alipaybook.BookSoap, org.apache.axis.wsdl.Skeleton {
     private com.yfy.webservice.alipaybook.BookSoap impl;
     private static java.util.Map _myOperations = new java.util.Hashtable();
     private static java.util.Collection _myOperationsList = new java.util.ArrayList();
- 
+
     /**
     * Returns List of OperationDesc objects with this name
     */

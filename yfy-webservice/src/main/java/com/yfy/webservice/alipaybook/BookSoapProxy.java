@@ -1,5 +1,5 @@
 package com.yfy.webservice.alipaybook;
- 
+
 public class BookSoapProxy implements com.yfy.webservice.alipaybook.BookSoap {
   private String _endpoint = null;
   private com.yfy.webservice.alipaybook.BookSoap bookSoap = null;
@@ -7,7 +7,7 @@ public class BookSoapProxy implements com.yfy.webservice.alipaybook.BookSoap {
   public BookSoapProxy() {
     _initBookSoapProxy();
   }
-   
+  
   public BookSoapProxy(String endpoint) {
     _endpoint = endpoint;
     _initBookSoapProxy();

@@ -6,8 +6,8 @@
  */
 
 package com.yfy.webservice.alipaybook;
- 
-public class BookSoapStub extends org.apache.axis.client.Stub implements com.yfy.webservice.alipaybook.BookSoap {
+
+public class BookSoapStub extends org.apache.axis.client.Stub implements BookSoap {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -125,4 +125,4 @@ public class BookSoapStub extends org.apache.axis.client.Stub implements com.yfy
 }
     }
 
-} 
+}
