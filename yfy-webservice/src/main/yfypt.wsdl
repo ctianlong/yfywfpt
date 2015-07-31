@@ -1,0 +1,4774 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/">
+<wsdl:types>
+<s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+<s:element name="Alipay_Bill_Download">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Bill_DownloadResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Bill_DownloadResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="GetPersonalCard">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="GetPersonalCardResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="GetPersonalCardResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Card_Bind">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Card_BindResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Card_BindResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Card_Bind_Cancel_Other">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Card_Bind_Cancel_OtherResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Card_Bind_Cancel_OtherResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_NewAdd">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_NewAddResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_NewAddResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Booking">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookingResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_BookingResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AgreementId">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AgreementIdResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_AgreementIdResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_Record">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_RecordResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Regist_RecordResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_Record_Detail">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_Record_DetailResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Regist_Record_DetailResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_Dept">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist_DeptResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Regist_DeptResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Regist">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RegistResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_RegistResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RegistApply">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RegistApplyResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_RegistApplyResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetOrderInfoByOrderNo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetOrderInfoByOrderNoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetOrderInfoByOrderNoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_UpdateOrderChargeInfo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_UpdateOrderChargeInfoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_UpdateOrderChargeInfoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAlipayOrder">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAlipayOrderResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetAlipayOrderResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAlipayOrderDetail">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAlipayOrderDetailResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetAlipayOrderDetailResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAllAlipayOrderRecord">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAllAlipayOrderRecordResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetAllAlipayOrderRecordResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Cancel">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_CancelResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_CancelResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportPageAddr">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportPageAddrResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetTestReportPageAddrResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportList">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportListResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetTestReportListResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAllTestReportList">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetAllTestReportListResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetAllTestReportListResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_UpdateMessageType">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_UpdateMessageTypeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_UpdateMessageTypeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportDetail">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportDetailResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetTestReportDetailResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportDetail2">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetTestReportDetail2Response">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetTestReportDetail2Result" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetPersonInfoByAlipayID">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetPersonInfoByAlipayIDResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetPersonInfoByAlipayIDResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AddAlipayPersonInfo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AddAlipayPersonInfoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_AddAlipayPersonInfoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetPersonInfo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_GetPersonInfoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_GetPersonInfoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_SetPrefee">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_SetPrefeeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_SetPrefeeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_InpFee">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_InpFeeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_InpFeeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="GetWaitingDept">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="GetWaitingDeptResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="GetWaitingDeptResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FundAuthAsync">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="type" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="str" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FundAuthAsyncResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="FundAuthAsyncResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PatStatus">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PatStatusResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_PatStatusResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_IsPreAuthorization">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_IsPreAuthorizationResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_IsPreAuthorizationResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Inp_Fee_PrepardFee">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Inp_Fee_PrepardFeeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Inp_Fee_PrepardFeeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RenewRegistApplyOrderNo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RenewRegistApplyOrderNoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_RenewRegistApplyOrderNoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PreAuthorizationQuery">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PreAuthorizationQueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_PreAuthorizationQueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizationUnFreeze">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizationUnFreezeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_AuthorizationUnFreezeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizationNewFreeze">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizationNewFreezeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_AuthorizationNewFreezeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_OrderHasPay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_OrderHasPayResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_OrderHasPayResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RechargeAccount">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RechargeAccountResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_RechargeAccountResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RechargeAccount_Query">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_RechargeAccount_QueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_RechargeAccount_QueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Wechat_Refund">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Wechat_RefundResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Wechat_RefundResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_HospitalList">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_HospitalListResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_HospitalListResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_DoctorInfo">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_DoctorInfoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_DoctorInfoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_MyWaitingQuery">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_MyWaitingQueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_MyWaitingQueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizeCheck">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_AuthorizeCheckResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_AuthorizeCheckResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrder_AdvHis">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrder_AdvHisResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_PayForOrder_AdvHisResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrder_Adv">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrder_AdvResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_PayForOrder_AdvResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrder">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_PayForOrderResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_PayForOrderResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_Queueno">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_QueuenoResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_BookForCheck_QueuenoResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_Queueno_List">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_Queueno_ListResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_BookForCheck_Queueno_ListResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_Queueno_Query">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_BookForCheck_Queueno_QueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_BookForCheck_Queueno_QueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_MatcherUser">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_MatcherUserResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_MatcherUserResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_ReportAnalysis_Item">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_ReportAnalysis_ItemResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_ReportAnalysis_ItemResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Mother_Kid">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Mother_KidResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Mother_KidResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_OtherServiceAuth">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_OtherServiceAuthResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_OtherServiceAuthResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Authoration_ApplyAndUser">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="Alipay_Authoration_ApplyAndUserResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Alipay_Authoration_ApplyAndUserResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="string" nillable="true" type="s:string"/>
+</s:schema>
+</wsdl:types>
+<wsdl:message name="Alipay_Bill_DownloadSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Bill_Download"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Bill_DownloadSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Bill_DownloadResponse"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardSoapIn">
+<wsdl:part name="parameters" element="tns:GetPersonalCard"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardSoapOut">
+<wsdl:part name="parameters" element="tns:GetPersonalCardResponse"/>
+</wsdl:message>
+<wsdl:message name="Card_BindSoapIn">
+<wsdl:part name="parameters" element="tns:Card_Bind"/>
+</wsdl:message>
+<wsdl:message name="Card_BindSoapOut">
+<wsdl:part name="parameters" element="tns:Card_BindResponse"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherSoapIn">
+<wsdl:part name="parameters" element="tns:Card_Bind_Cancel_Other"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherSoapOut">
+<wsdl:part name="parameters" element="tns:Card_Bind_Cancel_OtherResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_NewAdd"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_NewAddResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Booking"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_BookingResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_AgreementId"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_AgreementIdResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_Record"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_RecordResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_Record_Detail"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_Record_DetailResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_Dept"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Regist_DeptResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Regist"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_RegistResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_RegistApply"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_RegistApplyResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetOrderInfoByOrderNo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetOrderInfoByOrderNoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_UpdateOrderChargeInfo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_UpdateOrderChargeInfoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetAlipayOrder"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetAlipayOrderResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetAlipayOrderDetail"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetAlipayOrderDetailResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetAllAlipayOrderRecord"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetAllAlipayOrderRecordResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Cancel"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_CancelResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportPageAddr"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportPageAddrResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportList"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportListResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetAllTestReportList"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetAllTestReportListResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_UpdateMessageType"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_UpdateMessageTypeResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportDetail"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportDetailResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2SoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportDetail2"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2SoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetTestReportDetail2Response"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetPersonInfoByAlipayID"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetPersonInfoByAlipayIDResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_AddAlipayPersonInfo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_AddAlipayPersonInfoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_GetPersonInfo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_GetPersonInfoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_SetPrefee"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_SetPrefeeResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_InpFee"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_InpFeeResponse"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptSoapIn">
+<wsdl:part name="parameters" element="tns:GetWaitingDept"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptSoapOut">
+<wsdl:part name="parameters" element="tns:GetWaitingDeptResponse"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncSoapIn">
+<wsdl:part name="parameters" element="tns:FundAuthAsync"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncSoapOut">
+<wsdl:part name="parameters" element="tns:FundAuthAsyncResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_PatStatus"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_PatStatusResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_IsPreAuthorization"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_IsPreAuthorizationResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Inp_Fee_PrepardFee"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Inp_Fee_PrepardFeeResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_RenewRegistApplyOrderNo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_RenewRegistApplyOrderNoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQuerySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_PreAuthorizationQuery"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQuerySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_PreAuthorizationQueryResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizationUnFreeze"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizationUnFreezeResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizationNewFreeze"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizationNewFreezeResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPaySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_OrderHasPay"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPaySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_OrderHasPayResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_RechargeAccount"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_RechargeAccountResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QuerySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_RechargeAccount_Query"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QuerySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_RechargeAccount_QueryResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Wechat_Refund"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Wechat_RefundResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_HospitalList"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_HospitalListResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_DoctorInfo"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_DoctorInfoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQuerySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_MyWaitingQuery"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQuerySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_MyWaitingQueryResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizeCheck"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_AuthorizeCheckResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrder_AdvHis"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrder_AdvHisResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrder_Adv"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrder_AdvResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrder"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_PayForOrderResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_Queueno"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_QueuenoResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_Queueno_List"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_Queueno_ListResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QuerySoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_Queueno_Query"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QuerySoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_BookForCheck_Queueno_QueryResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_MatcherUser"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_MatcherUserResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_ReportAnalysis_Item"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_ReportAnalysis_ItemResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Mother_Kid"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Mother_KidResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_OtherServiceAuth"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_OtherServiceAuthResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserSoapIn">
+<wsdl:part name="parameters" element="tns:Alipay_Authoration_ApplyAndUser"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserSoapOut">
+<wsdl:part name="parameters" element="tns:Alipay_Authoration_ApplyAndUserResponse"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Bill_DownloadHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Bill_DownloadHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Card_BindHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Card_BindHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplyHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplyHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2HttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2HttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncHttpGetIn">
+<wsdl:part name="type" type="s:string"/>
+<wsdl:part name="str" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQueryHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPayHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPayHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QueryHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQueryHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QueryHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserHttpGetIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Bill_DownloadHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Bill_DownloadHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="GetPersonalCardHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Card_BindHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Card_BindHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Card_Bind_Cancel_OtherHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_NewAddHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookingHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AgreementIdHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_RecordHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_Record_DetailHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Regist_DeptHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplyHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RegistApplyHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetOrderInfoByOrderNoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateOrderChargeInfoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAlipayOrderDetailHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllAlipayOrderRecordHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_CancelHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportPageAddrHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportListHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetAllTestReportListHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_UpdateMessageTypeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetailHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2HttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetTestReportDetail2HttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoByAlipayIDHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AddAlipayPersonInfoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_GetPersonInfoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_SetPrefeeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_InpFeeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="GetWaitingDeptHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncHttpPostIn">
+<wsdl:part name="type" type="s:string"/>
+<wsdl:part name="str" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="FundAuthAsyncHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PatStatusHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_IsPreAuthorizationHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Inp_Fee_PrepardFeeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RenewRegistApplyOrderNoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQueryHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PreAuthorizationQueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationUnFreezeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizationNewFreezeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPayHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OrderHasPayHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccountHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QueryHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_RechargeAccount_QueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Wechat_RefundHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_HospitalListHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_DoctorInfoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQueryHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MyWaitingQueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_AuthorizeCheckHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHisHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrder_AdvHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_PayForOrderHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_QueuenoHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_ListHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QueryHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_BookForCheck_Queueno_QueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_MatcherUserHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_ReportAnalysis_ItemHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Mother_KidHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_OtherServiceAuthHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserHttpPostIn">
+<wsdl:part name="xml" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="Alipay_Authoration_ApplyAndUserHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:portType name="AlipayServiceSoap">
+<wsdl:operation name="Alipay_Bill_Download">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付宝账单下载</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Bill_DownloadSoapIn"/>
+<wsdl:output message="tns:Alipay_Bill_DownloadSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定卡列表</wsdl:documentation>
+<wsdl:input message="tns:GetPersonalCardSoapIn"/>
+<wsdl:output message="tns:GetPersonalCardSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定就诊卡</wsdl:documentation>
+<wsdl:input message="tns:Card_BindSoapIn"/>
+<wsdl:output message="tns:Card_BindSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消绑定(AgreementID)</wsdl:documentation>
+<wsdl:input message="tns:Card_Bind_Cancel_OtherSoapIn"/>
+<wsdl:output message="tns:Card_Bind_Cancel_OtherSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">新增支付宝账户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_NewAddSoapIn"/>
+<wsdl:output message="tns:Alipay_NewAddSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookingSoapIn"/>
+<wsdl:output message="tns:Alipay_BookingSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取账号绑卡协议号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AgreementIdSoapIn"/>
+<wsdl:output message="tns:Alipay_AgreementIdSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号预约列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_RecordSoapIn"/>
+<wsdl:output message="tns:Alipay_Regist_RecordSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">账号挂号预约明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_Record_DetailSoapIn"/>
+<wsdl:output message="tns:Alipay_Regist_Record_DetailSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">当日挂号科室</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_DeptSoapIn"/>
+<wsdl:output message="tns:Alipay_Regist_DeptSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号/取消挂号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistSoapIn"/>
+<wsdl:output message="tns:Alipay_RegistSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号申请</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistApplySoapIn"/>
+<wsdl:output message="tns:Alipay_RegistApplySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号取订单内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetOrderInfoByOrderNoSoapIn"/>
+<wsdl:output message="tns:Alipay_GetOrderInfoByOrderNoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号更新订单支付状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateOrderChargeInfoSoapIn"/>
+<wsdl:output message="tns:Alipay_UpdateOrderChargeInfoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人最新待付费项目</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderSoapIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取订单明细内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderDetailSoapIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderDetailSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取患者所有交易记录</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllAlipayOrderRecordSoapIn"/>
+<wsdl:output message="tns:Alipay_GetAllAlipayOrderRecordSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消关注</wsdl:documentation>
+<wsdl:input message="tns:Alipay_CancelSoapIn"/>
+<wsdl:output message="tns:Alipay_CancelSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告页面地址</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportPageAddrSoapIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportPageAddrSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportListSoapIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportListSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取五大类所有报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllTestReportListSoapIn"/>
+<wsdl:output message="tns:Alipay_GetAllTestReportListSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新推送报告的未读状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateMessageTypeSoapIn"/>
+<wsdl:output message="tns:Alipay_UpdateMessageTypeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetailSoapIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetailSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细2</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetail2SoapIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetail2SoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID获取信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoByAlipayIDSoapIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoByAlipayIDSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AddAlipayPersonInfoSoapIn"/>
+<wsdl:output message="tns:Alipay_AddAlipayPersonInfoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoSoapIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权成功后返回授权金额</wsdl:documentation>
+<wsdl:input message="tns:Alipay_SetPrefeeSoapIn"/>
+<wsdl:output message="tns:Alipay_SetPrefeeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">住院费用日结明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_InpFeeSoapIn"/>
+<wsdl:output message="tns:Alipay_InpFeeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取候诊队列部门</wsdl:documentation>
+<wsdl:input message="tns:GetWaitingDeptSoapIn"/>
+<wsdl:output message="tns:GetWaitingDeptSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权异步接口</wsdl:documentation>
+<wsdl:input message="tns:FundAuthAsyncSoapIn"/>
+<wsdl:output message="tns:FundAuthAsyncSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人在院状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PatStatusSoapIn"/>
+<wsdl:output message="tns:Alipay_PatStatusSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">是否预授权[未用]</wsdl:documentation>
+<wsdl:input message="tns:Alipay_IsPreAuthorizationSoapIn"/>
+<wsdl:output message="tns:Alipay_IsPreAuthorizationSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预交金缴费查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Inp_Fee_PrepardFeeSoapIn"/>
+<wsdl:output message="tns:Alipay_Inp_Fee_PrepardFeeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预授权OrderNo，RequestNo</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RenewRegistApplyOrderNoSoapIn"/>
+<wsdl:output message="tns:Alipay_RenewRegistApplyOrderNoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的预授权查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PreAuthorizationQuerySoapIn"/>
+<wsdl:output message="tns:Alipay_PreAuthorizationQuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权解冻</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationUnFreezeSoapIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationUnFreezeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权新增</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationNewFreezeSoapIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationNewFreezeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">订单是否支付</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OrderHasPaySoapIn"/>
+<wsdl:output message="tns:Alipay_OrderHasPaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">一卡通充值</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccountSoapIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccountSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询是否有退费</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccount_QuerySoapIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccount_QuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">微信申请退款</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Wechat_RefundSoapIn"/>
+<wsdl:output message="tns:Alipay_Wechat_RefundSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取院区列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_HospitalListSoapIn"/>
+<wsdl:output message="tns:Alipay_HospitalListSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">专家介绍</wsdl:documentation>
+<wsdl:input message="tns:Alipay_DoctorInfoSoapIn"/>
+<wsdl:output message="tns:Alipay_DoctorInfoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的候诊查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MyWaitingQuerySoapIn"/>
+<wsdl:output message="tns:Alipay_MyWaitingQuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的微信授权状态查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizeCheckSoapIn"/>
+<wsdl:output message="tns:Alipay_AuthorizeCheckSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">主动支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvHisSoapIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvHisSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">选择支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvSoapIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrderSoapIn"/>
+<wsdl:output message="tns:Alipay_PayForOrderSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查取号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_QueuenoSoapIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_QueuenoSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_ListSoapIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_ListSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_QuerySoapIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_QuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">匹配支付宝用户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MatcherUserSoapIn"/>
+<wsdl:output message="tns:Alipay_MatcherUserSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取可解析项目列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_ReportAnalysis_ItemSoapIn"/>
+<wsdl:output message="tns:Alipay_ReportAnalysis_ItemSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取婴儿床位信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Mother_KidSoapIn"/>
+<wsdl:output message="tns:Alipay_Mother_KidSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">第三方服务授权</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OtherServiceAuthSoapIn"/>
+<wsdl:output message="tns:Alipay_OtherServiceAuthSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户身份及应用权限判断</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Authoration_ApplyAndUserSoapIn"/>
+<wsdl:output message="tns:Alipay_Authoration_ApplyAndUserSoapOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:portType name="AlipayServiceHttpGet">
+<wsdl:operation name="Alipay_Bill_Download">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付宝账单下载</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Bill_DownloadHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Bill_DownloadHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定卡列表</wsdl:documentation>
+<wsdl:input message="tns:GetPersonalCardHttpGetIn"/>
+<wsdl:output message="tns:GetPersonalCardHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定就诊卡</wsdl:documentation>
+<wsdl:input message="tns:Card_BindHttpGetIn"/>
+<wsdl:output message="tns:Card_BindHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消绑定(AgreementID)</wsdl:documentation>
+<wsdl:input message="tns:Card_Bind_Cancel_OtherHttpGetIn"/>
+<wsdl:output message="tns:Card_Bind_Cancel_OtherHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">新增支付宝账户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_NewAddHttpGetIn"/>
+<wsdl:output message="tns:Alipay_NewAddHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookingHttpGetIn"/>
+<wsdl:output message="tns:Alipay_BookingHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取账号绑卡协议号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AgreementIdHttpGetIn"/>
+<wsdl:output message="tns:Alipay_AgreementIdHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号预约列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_RecordHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Regist_RecordHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">账号挂号预约明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_Record_DetailHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Regist_Record_DetailHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">当日挂号科室</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_DeptHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Regist_DeptHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号/取消挂号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistHttpGetIn"/>
+<wsdl:output message="tns:Alipay_RegistHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号申请</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistApplyHttpGetIn"/>
+<wsdl:output message="tns:Alipay_RegistApplyHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号取订单内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetOrderInfoByOrderNoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetOrderInfoByOrderNoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号更新订单支付状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateOrderChargeInfoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_UpdateOrderChargeInfoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人最新待付费项目</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取订单明细内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderDetailHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderDetailHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取患者所有交易记录</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllAlipayOrderRecordHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetAllAlipayOrderRecordHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消关注</wsdl:documentation>
+<wsdl:input message="tns:Alipay_CancelHttpGetIn"/>
+<wsdl:output message="tns:Alipay_CancelHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告页面地址</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportPageAddrHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportPageAddrHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportListHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportListHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取五大类所有报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllTestReportListHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetAllTestReportListHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新推送报告的未读状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateMessageTypeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_UpdateMessageTypeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetailHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetailHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细2</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetail2HttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetail2HttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID获取信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoByAlipayIDHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoByAlipayIDHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AddAlipayPersonInfoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_AddAlipayPersonInfoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权成功后返回授权金额</wsdl:documentation>
+<wsdl:input message="tns:Alipay_SetPrefeeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_SetPrefeeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">住院费用日结明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_InpFeeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_InpFeeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取候诊队列部门</wsdl:documentation>
+<wsdl:input message="tns:GetWaitingDeptHttpGetIn"/>
+<wsdl:output message="tns:GetWaitingDeptHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权异步接口</wsdl:documentation>
+<wsdl:input message="tns:FundAuthAsyncHttpGetIn"/>
+<wsdl:output message="tns:FundAuthAsyncHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人在院状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PatStatusHttpGetIn"/>
+<wsdl:output message="tns:Alipay_PatStatusHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">是否预授权[未用]</wsdl:documentation>
+<wsdl:input message="tns:Alipay_IsPreAuthorizationHttpGetIn"/>
+<wsdl:output message="tns:Alipay_IsPreAuthorizationHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预交金缴费查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Inp_Fee_PrepardFeeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Inp_Fee_PrepardFeeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预授权OrderNo，RequestNo</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RenewRegistApplyOrderNoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_RenewRegistApplyOrderNoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的预授权查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PreAuthorizationQueryHttpGetIn"/>
+<wsdl:output message="tns:Alipay_PreAuthorizationQueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权解冻</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationUnFreezeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationUnFreezeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权新增</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationNewFreezeHttpGetIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationNewFreezeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">订单是否支付</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OrderHasPayHttpGetIn"/>
+<wsdl:output message="tns:Alipay_OrderHasPayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">一卡通充值</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccountHttpGetIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccountHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询是否有退费</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccount_QueryHttpGetIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccount_QueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">微信申请退款</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Wechat_RefundHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Wechat_RefundHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取院区列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_HospitalListHttpGetIn"/>
+<wsdl:output message="tns:Alipay_HospitalListHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">专家介绍</wsdl:documentation>
+<wsdl:input message="tns:Alipay_DoctorInfoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_DoctorInfoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的候诊查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MyWaitingQueryHttpGetIn"/>
+<wsdl:output message="tns:Alipay_MyWaitingQueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的微信授权状态查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizeCheckHttpGetIn"/>
+<wsdl:output message="tns:Alipay_AuthorizeCheckHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">主动支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvHisHttpGetIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvHisHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">选择支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvHttpGetIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrderHttpGetIn"/>
+<wsdl:output message="tns:Alipay_PayForOrderHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查取号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_QueuenoHttpGetIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_QueuenoHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_ListHttpGetIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_ListHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_QueryHttpGetIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_QueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">匹配支付宝用户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MatcherUserHttpGetIn"/>
+<wsdl:output message="tns:Alipay_MatcherUserHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取可解析项目列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_ReportAnalysis_ItemHttpGetIn"/>
+<wsdl:output message="tns:Alipay_ReportAnalysis_ItemHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取婴儿床位信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Mother_KidHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Mother_KidHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">第三方服务授权</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OtherServiceAuthHttpGetIn"/>
+<wsdl:output message="tns:Alipay_OtherServiceAuthHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户身份及应用权限判断</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Authoration_ApplyAndUserHttpGetIn"/>
+<wsdl:output message="tns:Alipay_Authoration_ApplyAndUserHttpGetOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:portType name="AlipayServiceHttpPost">
+<wsdl:operation name="Alipay_Bill_Download">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付宝账单下载</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Bill_DownloadHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Bill_DownloadHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定卡列表</wsdl:documentation>
+<wsdl:input message="tns:GetPersonalCardHttpPostIn"/>
+<wsdl:output message="tns:GetPersonalCardHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">绑定就诊卡</wsdl:documentation>
+<wsdl:input message="tns:Card_BindHttpPostIn"/>
+<wsdl:output message="tns:Card_BindHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消绑定(AgreementID)</wsdl:documentation>
+<wsdl:input message="tns:Card_Bind_Cancel_OtherHttpPostIn"/>
+<wsdl:output message="tns:Card_Bind_Cancel_OtherHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">新增支付宝账户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_NewAddHttpPostIn"/>
+<wsdl:output message="tns:Alipay_NewAddHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookingHttpPostIn"/>
+<wsdl:output message="tns:Alipay_BookingHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取账号绑卡协议号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AgreementIdHttpPostIn"/>
+<wsdl:output message="tns:Alipay_AgreementIdHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号预约列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_RecordHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Regist_RecordHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">账号挂号预约明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_Record_DetailHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Regist_Record_DetailHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">当日挂号科室</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Regist_DeptHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Regist_DeptHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号/取消挂号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistHttpPostIn"/>
+<wsdl:output message="tns:Alipay_RegistHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">挂号申请</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RegistApplyHttpPostIn"/>
+<wsdl:output message="tns:Alipay_RegistApplyHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号取订单内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetOrderInfoByOrderNoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetOrderInfoByOrderNoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据订单号更新订单支付状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateOrderChargeInfoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_UpdateOrderChargeInfoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人最新待付费项目</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取订单明细内容</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAlipayOrderDetailHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetAlipayOrderDetailHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取患者所有交易记录</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllAlipayOrderRecordHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetAllAlipayOrderRecordHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">取消关注</wsdl:documentation>
+<wsdl:input message="tns:Alipay_CancelHttpPostIn"/>
+<wsdl:output message="tns:Alipay_CancelHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告页面地址</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportPageAddrHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportPageAddrHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportListHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportListHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取五大类所有报告列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetAllTestReportListHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetAllTestReportListHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新推送报告的未读状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_UpdateMessageTypeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_UpdateMessageTypeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetailHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetailHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取报告明细2</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetTestReportDetail2HttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetTestReportDetail2HttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID获取信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoByAlipayIDHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoByAlipayIDHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AddAlipayPersonInfoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_AddAlipayPersonInfoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据AgreementID修改信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_GetPersonInfoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_GetPersonInfoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权成功后返回授权金额</wsdl:documentation>
+<wsdl:input message="tns:Alipay_SetPrefeeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_SetPrefeeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">住院费用日结明细</wsdl:documentation>
+<wsdl:input message="tns:Alipay_InpFeeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_InpFeeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取候诊队列部门</wsdl:documentation>
+<wsdl:input message="tns:GetWaitingDeptHttpPostIn"/>
+<wsdl:output message="tns:GetWaitingDeptHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权异步接口</wsdl:documentation>
+<wsdl:input message="tns:FundAuthAsyncHttpPostIn"/>
+<wsdl:output message="tns:FundAuthAsyncHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取病人在院状态</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PatStatusHttpPostIn"/>
+<wsdl:output message="tns:Alipay_PatStatusHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">是否预授权[未用]</wsdl:documentation>
+<wsdl:input message="tns:Alipay_IsPreAuthorizationHttpPostIn"/>
+<wsdl:output message="tns:Alipay_IsPreAuthorizationHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预交金缴费查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Inp_Fee_PrepardFeeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Inp_Fee_PrepardFeeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新预授权OrderNo，RequestNo</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RenewRegistApplyOrderNoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_RenewRegistApplyOrderNoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的预授权查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PreAuthorizationQueryHttpPostIn"/>
+<wsdl:output message="tns:Alipay_PreAuthorizationQueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权解冻</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationUnFreezeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationUnFreezeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预授权新增</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizationNewFreezeHttpPostIn"/>
+<wsdl:output message="tns:Alipay_AuthorizationNewFreezeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">订单是否支付</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OrderHasPayHttpPostIn"/>
+<wsdl:output message="tns:Alipay_OrderHasPayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">一卡通充值</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccountHttpPostIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccountHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询是否有退费</wsdl:documentation>
+<wsdl:input message="tns:Alipay_RechargeAccount_QueryHttpPostIn"/>
+<wsdl:output message="tns:Alipay_RechargeAccount_QueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">微信申请退款</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Wechat_RefundHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Wechat_RefundHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取院区列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_HospitalListHttpPostIn"/>
+<wsdl:output message="tns:Alipay_HospitalListHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">专家介绍</wsdl:documentation>
+<wsdl:input message="tns:Alipay_DoctorInfoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_DoctorInfoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的候诊查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MyWaitingQueryHttpPostIn"/>
+<wsdl:output message="tns:Alipay_MyWaitingQueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">我的微信授权状态查询</wsdl:documentation>
+<wsdl:input message="tns:Alipay_AuthorizeCheckHttpPostIn"/>
+<wsdl:output message="tns:Alipay_AuthorizeCheckHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">主动支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvHisHttpPostIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvHisHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">选择支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrder_AdvHttpPostIn"/>
+<wsdl:output message="tns:Alipay_PayForOrder_AdvHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">支付医嘱</wsdl:documentation>
+<wsdl:input message="tns:Alipay_PayForOrderHttpPostIn"/>
+<wsdl:output message="tns:Alipay_PayForOrderHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查取号</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_QueuenoHttpPostIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_QueuenoHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_ListHttpPostIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_ListHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">预约检查列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_BookForCheck_Queueno_QueryHttpPostIn"/>
+<wsdl:output message="tns:Alipay_BookForCheck_Queueno_QueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">匹配支付宝用户</wsdl:documentation>
+<wsdl:input message="tns:Alipay_MatcherUserHttpPostIn"/>
+<wsdl:output message="tns:Alipay_MatcherUserHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取可解析项目列表</wsdl:documentation>
+<wsdl:input message="tns:Alipay_ReportAnalysis_ItemHttpPostIn"/>
+<wsdl:output message="tns:Alipay_ReportAnalysis_ItemHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取婴儿床位信息</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Mother_KidHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Mother_KidHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">第三方服务授权</wsdl:documentation>
+<wsdl:input message="tns:Alipay_OtherServiceAuthHttpPostIn"/>
+<wsdl:output message="tns:Alipay_OtherServiceAuthHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户身份及应用权限判断</wsdl:documentation>
+<wsdl:input message="tns:Alipay_Authoration_ApplyAndUserHttpPostIn"/>
+<wsdl:output message="tns:Alipay_Authoration_ApplyAndUserHttpPostOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="AlipayServiceSoap" type="tns:AlipayServiceSoap">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="Alipay_Bill_Download">
+<soap:operation soapAction="http://tempuri.org/Alipay_Bill_Download" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<soap:operation soapAction="http://tempuri.org/GetPersonalCard" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<soap:operation soapAction="http://tempuri.org/Card_Bind" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<soap:operation soapAction="http://tempuri.org/Card_Bind_Cancel_Other" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<soap:operation soapAction="http://tempuri.org/Alipay_NewAdd" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<soap:operation soapAction="http://tempuri.org/Alipay_Booking" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<soap:operation soapAction="http://tempuri.org/Alipay_AgreementId" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<soap:operation soapAction="http://tempuri.org/Alipay_Regist_Record" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<soap:operation soapAction="http://tempuri.org/Alipay_Regist_Record_Detail" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<soap:operation soapAction="http://tempuri.org/Alipay_Regist_Dept" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<soap:operation soapAction="http://tempuri.org/Alipay_Regist" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<soap:operation soapAction="http://tempuri.org/Alipay_RegistApply" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetOrderInfoByOrderNo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<soap:operation soapAction="http://tempuri.org/Alipay_UpdateOrderChargeInfo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetAlipayOrder" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetAlipayOrderDetail" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetAllAlipayOrderRecord" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<soap:operation soapAction="http://tempuri.org/Alipay_Cancel" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetTestReportPageAddr" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetTestReportList" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetAllTestReportList" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<soap:operation soapAction="http://tempuri.org/Alipay_UpdateMessageType" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetTestReportDetail" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetTestReportDetail2" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetPersonInfoByAlipayID" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<soap:operation soapAction="http://tempuri.org/Alipay_AddAlipayPersonInfo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<soap:operation soapAction="http://tempuri.org/Alipay_GetPersonInfo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<soap:operation soapAction="http://tempuri.org/Alipay_SetPrefee" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<soap:operation soapAction="http://tempuri.org/Alipay_InpFee" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<soap:operation soapAction="http://tempuri.org/GetWaitingDept" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<soap:operation soapAction="http://tempuri.org/FundAuthAsync" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<soap:operation soapAction="http://tempuri.org/Alipay_PatStatus" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<soap:operation soapAction="http://tempuri.org/Alipay_IsPreAuthorization" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<soap:operation soapAction="http://tempuri.org/Alipay_Inp_Fee_PrepardFee" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<soap:operation soapAction="http://tempuri.org/Alipay_RenewRegistApplyOrderNo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<soap:operation soapAction="http://tempuri.org/Alipay_PreAuthorizationQuery" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<soap:operation soapAction="http://tempuri.org/Alipay_AuthorizationUnFreeze" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<soap:operation soapAction="http://tempuri.org/Alipay_AuthorizationNewFreeze" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<soap:operation soapAction="http://tempuri.org/Alipay_OrderHasPay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<soap:operation soapAction="http://tempuri.org/Alipay_RechargeAccount" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<soap:operation soapAction="http://tempuri.org/Alipay_RechargeAccount_Query" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<soap:operation soapAction="http://tempuri.org/Alipay_Wechat_Refund" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<soap:operation soapAction="http://tempuri.org/Alipay_HospitalList" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<soap:operation soapAction="http://tempuri.org/Alipay_DoctorInfo" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<soap:operation soapAction="http://tempuri.org/Alipay_MyWaitingQuery" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<soap:operation soapAction="http://tempuri.org/Alipay_AuthorizeCheck" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<soap:operation soapAction="http://tempuri.org/Alipay_PayForOrder_AdvHis" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<soap:operation soapAction="http://tempuri.org/Alipay_PayForOrder_Adv" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<soap:operation soapAction="http://tempuri.org/Alipay_PayForOrder" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<soap:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<soap:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno_List" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<soap:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno_Query" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<soap:operation soapAction="http://tempuri.org/Alipay_MatcherUser" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<soap:operation soapAction="http://tempuri.org/Alipay_ReportAnalysis_Item" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<soap:operation soapAction="http://tempuri.org/Alipay_Mother_Kid" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<soap:operation soapAction="http://tempuri.org/Alipay_OtherServiceAuth" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<soap:operation soapAction="http://tempuri.org/Alipay_Authoration_ApplyAndUser" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="AlipayServiceSoap12" type="tns:AlipayServiceSoap">
+<soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="Alipay_Bill_Download">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Bill_Download" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<soap12:operation soapAction="http://tempuri.org/GetPersonalCard" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<soap12:operation soapAction="http://tempuri.org/Card_Bind" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<soap12:operation soapAction="http://tempuri.org/Card_Bind_Cancel_Other" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<soap12:operation soapAction="http://tempuri.org/Alipay_NewAdd" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Booking" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<soap12:operation soapAction="http://tempuri.org/Alipay_AgreementId" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Regist_Record" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Regist_Record_Detail" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Regist_Dept" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Regist" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<soap12:operation soapAction="http://tempuri.org/Alipay_RegistApply" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetOrderInfoByOrderNo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_UpdateOrderChargeInfo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetAlipayOrder" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetAlipayOrderDetail" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetAllAlipayOrderRecord" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Cancel" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetTestReportPageAddr" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetTestReportList" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetAllTestReportList" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<soap12:operation soapAction="http://tempuri.org/Alipay_UpdateMessageType" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetTestReportDetail" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetTestReportDetail2" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetPersonInfoByAlipayID" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_AddAlipayPersonInfo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_GetPersonInfo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<soap12:operation soapAction="http://tempuri.org/Alipay_SetPrefee" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<soap12:operation soapAction="http://tempuri.org/Alipay_InpFee" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<soap12:operation soapAction="http://tempuri.org/GetWaitingDept" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<soap12:operation soapAction="http://tempuri.org/FundAuthAsync" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<soap12:operation soapAction="http://tempuri.org/Alipay_PatStatus" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<soap12:operation soapAction="http://tempuri.org/Alipay_IsPreAuthorization" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Inp_Fee_PrepardFee" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_RenewRegistApplyOrderNo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<soap12:operation soapAction="http://tempuri.org/Alipay_PreAuthorizationQuery" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<soap12:operation soapAction="http://tempuri.org/Alipay_AuthorizationUnFreeze" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<soap12:operation soapAction="http://tempuri.org/Alipay_AuthorizationNewFreeze" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<soap12:operation soapAction="http://tempuri.org/Alipay_OrderHasPay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<soap12:operation soapAction="http://tempuri.org/Alipay_RechargeAccount" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<soap12:operation soapAction="http://tempuri.org/Alipay_RechargeAccount_Query" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Wechat_Refund" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<soap12:operation soapAction="http://tempuri.org/Alipay_HospitalList" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<soap12:operation soapAction="http://tempuri.org/Alipay_DoctorInfo" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<soap12:operation soapAction="http://tempuri.org/Alipay_MyWaitingQuery" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<soap12:operation soapAction="http://tempuri.org/Alipay_AuthorizeCheck" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<soap12:operation soapAction="http://tempuri.org/Alipay_PayForOrder_AdvHis" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<soap12:operation soapAction="http://tempuri.org/Alipay_PayForOrder_Adv" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<soap12:operation soapAction="http://tempuri.org/Alipay_PayForOrder" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<soap12:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<soap12:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno_List" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<soap12:operation soapAction="http://tempuri.org/Alipay_BookForCheck_Queueno_Query" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<soap12:operation soapAction="http://tempuri.org/Alipay_MatcherUser" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<soap12:operation soapAction="http://tempuri.org/Alipay_ReportAnalysis_Item" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Mother_Kid" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<soap12:operation soapAction="http://tempuri.org/Alipay_OtherServiceAuth" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<soap12:operation soapAction="http://tempuri.org/Alipay_Authoration_ApplyAndUser" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="AlipayServiceHttpGet" type="tns:AlipayServiceHttpGet">
+<http:binding verb="GET"/>
+<wsdl:operation name="Alipay_Bill_Download">
+<http:operation location="/Alipay_Bill_Download"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<http:operation location="/GetPersonalCard"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<http:operation location="/Card_Bind"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<http:operation location="/Card_Bind_Cancel_Other"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<http:operation location="/Alipay_NewAdd"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<http:operation location="/Alipay_Booking"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<http:operation location="/Alipay_AgreementId"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<http:operation location="/Alipay_Regist_Record"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<http:operation location="/Alipay_Regist_Record_Detail"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<http:operation location="/Alipay_Regist_Dept"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<http:operation location="/Alipay_Regist"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<http:operation location="/Alipay_RegistApply"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<http:operation location="/Alipay_GetOrderInfoByOrderNo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<http:operation location="/Alipay_UpdateOrderChargeInfo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<http:operation location="/Alipay_GetAlipayOrder"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<http:operation location="/Alipay_GetAlipayOrderDetail"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<http:operation location="/Alipay_GetAllAlipayOrderRecord"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<http:operation location="/Alipay_Cancel"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<http:operation location="/Alipay_GetTestReportPageAddr"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<http:operation location="/Alipay_GetTestReportList"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<http:operation location="/Alipay_GetAllTestReportList"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<http:operation location="/Alipay_UpdateMessageType"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<http:operation location="/Alipay_GetTestReportDetail"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<http:operation location="/Alipay_GetTestReportDetail2"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<http:operation location="/Alipay_GetPersonInfoByAlipayID"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<http:operation location="/Alipay_AddAlipayPersonInfo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<http:operation location="/Alipay_GetPersonInfo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<http:operation location="/Alipay_SetPrefee"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<http:operation location="/Alipay_InpFee"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<http:operation location="/GetWaitingDept"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<http:operation location="/FundAuthAsync"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<http:operation location="/Alipay_PatStatus"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<http:operation location="/Alipay_IsPreAuthorization"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<http:operation location="/Alipay_Inp_Fee_PrepardFee"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<http:operation location="/Alipay_RenewRegistApplyOrderNo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<http:operation location="/Alipay_PreAuthorizationQuery"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<http:operation location="/Alipay_AuthorizationUnFreeze"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<http:operation location="/Alipay_AuthorizationNewFreeze"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<http:operation location="/Alipay_OrderHasPay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<http:operation location="/Alipay_RechargeAccount"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<http:operation location="/Alipay_RechargeAccount_Query"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<http:operation location="/Alipay_Wechat_Refund"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<http:operation location="/Alipay_HospitalList"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<http:operation location="/Alipay_DoctorInfo"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<http:operation location="/Alipay_MyWaitingQuery"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<http:operation location="/Alipay_AuthorizeCheck"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<http:operation location="/Alipay_PayForOrder_AdvHis"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<http:operation location="/Alipay_PayForOrder_Adv"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<http:operation location="/Alipay_PayForOrder"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<http:operation location="/Alipay_BookForCheck_Queueno"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<http:operation location="/Alipay_BookForCheck_Queueno_List"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<http:operation location="/Alipay_BookForCheck_Queueno_Query"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<http:operation location="/Alipay_MatcherUser"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<http:operation location="/Alipay_ReportAnalysis_Item"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<http:operation location="/Alipay_Mother_Kid"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<http:operation location="/Alipay_OtherServiceAuth"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<http:operation location="/Alipay_Authoration_ApplyAndUser"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="AlipayServiceHttpPost" type="tns:AlipayServiceHttpPost">
+<http:binding verb="POST"/>
+<wsdl:operation name="Alipay_Bill_Download">
+<http:operation location="/Alipay_Bill_Download"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetPersonalCard">
+<http:operation location="/GetPersonalCard"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind">
+<http:operation location="/Card_Bind"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Card_Bind_Cancel_Other">
+<http:operation location="/Card_Bind_Cancel_Other"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_NewAdd">
+<http:operation location="/Alipay_NewAdd"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Booking">
+<http:operation location="/Alipay_Booking"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AgreementId">
+<http:operation location="/Alipay_AgreementId"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record">
+<http:operation location="/Alipay_Regist_Record"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Record_Detail">
+<http:operation location="/Alipay_Regist_Record_Detail"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist_Dept">
+<http:operation location="/Alipay_Regist_Dept"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Regist">
+<http:operation location="/Alipay_Regist"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RegistApply">
+<http:operation location="/Alipay_RegistApply"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetOrderInfoByOrderNo">
+<http:operation location="/Alipay_GetOrderInfoByOrderNo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateOrderChargeInfo">
+<http:operation location="/Alipay_UpdateOrderChargeInfo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrder">
+<http:operation location="/Alipay_GetAlipayOrder"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAlipayOrderDetail">
+<http:operation location="/Alipay_GetAlipayOrderDetail"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllAlipayOrderRecord">
+<http:operation location="/Alipay_GetAllAlipayOrderRecord"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Cancel">
+<http:operation location="/Alipay_Cancel"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportPageAddr">
+<http:operation location="/Alipay_GetTestReportPageAddr"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportList">
+<http:operation location="/Alipay_GetTestReportList"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetAllTestReportList">
+<http:operation location="/Alipay_GetAllTestReportList"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_UpdateMessageType">
+<http:operation location="/Alipay_UpdateMessageType"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail">
+<http:operation location="/Alipay_GetTestReportDetail"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetTestReportDetail2">
+<http:operation location="/Alipay_GetTestReportDetail2"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfoByAlipayID">
+<http:operation location="/Alipay_GetPersonInfoByAlipayID"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AddAlipayPersonInfo">
+<http:operation location="/Alipay_AddAlipayPersonInfo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_GetPersonInfo">
+<http:operation location="/Alipay_GetPersonInfo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_SetPrefee">
+<http:operation location="/Alipay_SetPrefee"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_InpFee">
+<http:operation location="/Alipay_InpFee"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="GetWaitingDept">
+<http:operation location="/GetWaitingDept"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FundAuthAsync">
+<http:operation location="/FundAuthAsync"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PatStatus">
+<http:operation location="/Alipay_PatStatus"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_IsPreAuthorization">
+<http:operation location="/Alipay_IsPreAuthorization"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Inp_Fee_PrepardFee">
+<http:operation location="/Alipay_Inp_Fee_PrepardFee"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RenewRegistApplyOrderNo">
+<http:operation location="/Alipay_RenewRegistApplyOrderNo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PreAuthorizationQuery">
+<http:operation location="/Alipay_PreAuthorizationQuery"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationUnFreeze">
+<http:operation location="/Alipay_AuthorizationUnFreeze"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizationNewFreeze">
+<http:operation location="/Alipay_AuthorizationNewFreeze"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OrderHasPay">
+<http:operation location="/Alipay_OrderHasPay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount">
+<http:operation location="/Alipay_RechargeAccount"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_RechargeAccount_Query">
+<http:operation location="/Alipay_RechargeAccount_Query"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Wechat_Refund">
+<http:operation location="/Alipay_Wechat_Refund"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_HospitalList">
+<http:operation location="/Alipay_HospitalList"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_DoctorInfo">
+<http:operation location="/Alipay_DoctorInfo"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MyWaitingQuery">
+<http:operation location="/Alipay_MyWaitingQuery"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_AuthorizeCheck">
+<http:operation location="/Alipay_AuthorizeCheck"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_AdvHis">
+<http:operation location="/Alipay_PayForOrder_AdvHis"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder_Adv">
+<http:operation location="/Alipay_PayForOrder_Adv"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_PayForOrder">
+<http:operation location="/Alipay_PayForOrder"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno">
+<http:operation location="/Alipay_BookForCheck_Queueno"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_List">
+<http:operation location="/Alipay_BookForCheck_Queueno_List"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_BookForCheck_Queueno_Query">
+<http:operation location="/Alipay_BookForCheck_Queueno_Query"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_MatcherUser">
+<http:operation location="/Alipay_MatcherUser"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_ReportAnalysis_Item">
+<http:operation location="/Alipay_ReportAnalysis_Item"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Mother_Kid">
+<http:operation location="/Alipay_Mother_Kid"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_OtherServiceAuth">
+<http:operation location="/Alipay_OtherServiceAuth"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="Alipay_Authoration_ApplyAndUser">
+<http:operation location="/Alipay_Authoration_ApplyAndUser"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="AlipayService">
+<wsdl:port name="AlipayServiceSoap" binding="tns:AlipayServiceSoap">
+<soap:address location="http://172.20.1.91:8144/WebService/AlipayService.asmx"/>
+</wsdl:port>
+<wsdl:port name="AlipayServiceSoap12" binding="tns:AlipayServiceSoap12">
+<soap12:address location="http://172.20.1.91:8144/WebService/AlipayService.asmx"/>
+</wsdl:port>
+<wsdl:port name="AlipayServiceHttpGet" binding="tns:AlipayServiceHttpGet">
+<http:address location="http://172.20.1.91:8144/WebService/AlipayService.asmx"/>
+</wsdl:port>
+<wsdl:port name="AlipayServiceHttpPost" binding="tns:AlipayServiceHttpPost">
+<http:address location="http://172.20.1.91:8144/WebService/AlipayService.asmx"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
