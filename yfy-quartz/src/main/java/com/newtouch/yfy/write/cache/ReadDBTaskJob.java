@@ -8,13 +8,13 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.yfy.memcach.util.MemcachedUtil;
 
 import com.danga.MemCached.MemCachedClient;
 import com.newtouch.yfy.api.AppoResources;
 import com.newtouch.yfy.api.Dept;
 import com.newtouch.yfy.common.Common;
 import com.newtouch.yfy.service.ReadDBService;
+import com.yfy.memcach.util.MemcachedUtil;
 
 /**
  * 读取数据库数据，并将数据写入缓存

@@ -33,9 +33,9 @@ public class BookingJobTask {
 		// 执行任务
 		System.out.println("***定时计划test执行...***" + System.currentTimeMillis());
 
-		// YYSendLab("YY07",YY07Str("0"));
-		 //YYSendLab("YY07",YY07Str("1"));
-		 // YYSendLab("YY07",YY07Str("2"));
+		//  YYSendLab("YY07",YY07Str("0"));
+		//   YYSendLab("YY07",YY07Str("1"));
+		//   YYSendLab("YY07",YY07Str("2"));
 		// YY02Test();
 		//testAuthorityfy();
 	}

@@ -5,6 +5,7 @@ import java.util.List;
 import com.newtouch.yfy.api.AppoInfo;
 import com.newtouch.yfy.api.AppoResources;
 import com.newtouch.yfy.api.Dept;
+import com.newtouch.yfy.api.ServiceLog;
 
 
 /**
@@ -37,5 +38,10 @@ public interface ReadDBService {
 	 *  保存部门表数据
 	 */
 	public void dowriteToMysqlYY07(Dept dept);
+	
+	/**
+	 *  保存接口调用日志表数据
+	 */
+	public void doserviceLog(ServiceLog serviceLog);
 	
 }

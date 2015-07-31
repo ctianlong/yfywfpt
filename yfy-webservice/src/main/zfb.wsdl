@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/">
+<wsdl:types>
+<s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+<s:element name="pushTemplateMessage">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="msgType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="first" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="keywords" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="urlParas" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="rptType" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushTemplateMessageResponse">
+<s:complexType/>
+</s:element>
+<s:element name="pushMatcherMessage">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="msgType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="mobileNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="identityCard" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="first" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="keywords" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushMatcherMessageResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="pushMatcherMessageResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushEvaluateMessage">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="title" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="visitDate" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushEvaluateMessageResponse">
+<s:complexType/>
+</s:element>
+<s:element name="pushPayForAlipay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="payMentID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="title" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="isPush" type="s:string"/>
+<s:element minOccurs="1" maxOccurs="1" name="payType" type="s:int"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushPayForAlipayResponse">
+<s:complexType/>
+</s:element>
+<s:element name="pushNewPreAuthorForAlipay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="title" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="isPush" type="s:string"/>
+<s:element minOccurs="1" maxOccurs="1" name="payType" type="s:int"/>
+<s:element minOccurs="0" maxOccurs="1" name="outOrderNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outRequestNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="freezeFee" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushNewPreAuthorForAlipayResponse">
+<s:complexType/>
+</s:element>
+<s:element name="pushPreAuthorForAlipay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="title" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="isPush" type="s:string"/>
+<s:element minOccurs="1" maxOccurs="1" name="payType" type="s:int"/>
+<s:element minOccurs="0" maxOccurs="1" name="auth_no" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="out_request_no" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="mixfee" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="pushPreAuthorForAlipayResponse">
+<s:complexType/>
+</s:element>
+<s:element name="sendReportForAlipay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="title" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="actionName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="isPush" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="patId" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="reqNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="applyNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="techNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="type" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="id" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="isRead" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="sendReportForAlipayResponse">
+<s:complexType/>
+</s:element>
+<s:element name="unbindMedicalCardForAlipay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="agreementID" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="cardNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="alipayUserID" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="unbindMedicalCardForAlipayResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="unbindMedicalCardForAlipayResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="refundSingleToAlipayUser">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="alipay_trade_no" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_batch_no" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_fee" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_reason" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="refundSingleToAlipayUserResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="refundSingleToAlipayUserResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationFreeze">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="outOrderNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outRequestNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="freezeFee" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationFreezeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doPreAuthorizationFreezeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationUnFreeze">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="authNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outRequestNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationUnFreezeResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doPreAuthorizationUnFreezeResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationFreezeApply">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="authNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outRequestNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationFreezeApplyResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doPreAuthorizationFreezeApplyResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationQuery">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="authNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outOrderNo" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationQueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doPreAuthorizationQueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationPay">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="authNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="bodyDesc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="subjectDesc" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="buyerId" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="outTradeNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="totalFee" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doPreAuthorizationPayResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doPreAuthorizationPayResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doSingleTradeQuery">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="outOrderNo" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="doSingleTradeQueryResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="doSingleTradeQueryResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="refundToAlipayUser">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="alipay_trade_no" type="tns:ArrayOfString"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_batch_no" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_fee" type="tns:ArrayOfString"/>
+<s:element minOccurs="0" maxOccurs="1" name="refund_reason" type="tns:ArrayOfString"/>
+<s:element minOccurs="0" maxOccurs="1" name="count" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:complexType name="ArrayOfString">
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string"/>
+</s:sequence>
+</s:complexType>
+<s:element name="refundToAlipayUserResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="refundToAlipayUserResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="string" nillable="true" type="s:string"/>
+</s:schema>
+<s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+<s:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+<s:complexType name="StringArray">
+<s:complexContent mixed="false">
+<s:restriction base="soapenc:Array">
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string"/>
+</s:sequence>
+</s:restriction>
+</s:complexContent>
+</s:complexType>
+</s:schema>
+</wsdl:types>
+<wsdl:message name="pushTemplateMessageSoapIn">
+<wsdl:part name="parameters" element="tns:pushTemplateMessage"/>
+</wsdl:message>
+<wsdl:message name="pushTemplateMessageSoapOut">
+<wsdl:part name="parameters" element="tns:pushTemplateMessageResponse"/>
+</wsdl:message>
+<wsdl:message name="pushMatcherMessageSoapIn">
+<wsdl:part name="parameters" element="tns:pushMatcherMessage"/>
+</wsdl:message>
+<wsdl:message name="pushMatcherMessageSoapOut">
+<wsdl:part name="parameters" element="tns:pushMatcherMessageResponse"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageSoapIn">
+<wsdl:part name="parameters" element="tns:pushEvaluateMessage"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageSoapOut">
+<wsdl:part name="parameters" element="tns:pushEvaluateMessageResponse"/>
+</wsdl:message>
+<wsdl:message name="pushPayForAlipaySoapIn">
+<wsdl:part name="parameters" element="tns:pushPayForAlipay"/>
+</wsdl:message>
+<wsdl:message name="pushPayForAlipaySoapOut">
+<wsdl:part name="parameters" element="tns:pushPayForAlipayResponse"/>
+</wsdl:message>
+<wsdl:message name="pushNewPreAuthorForAlipaySoapIn">
+<wsdl:part name="parameters" element="tns:pushNewPreAuthorForAlipay"/>
+</wsdl:message>
+<wsdl:message name="pushNewPreAuthorForAlipaySoapOut">
+<wsdl:part name="parameters" element="tns:pushNewPreAuthorForAlipayResponse"/>
+</wsdl:message>
+<wsdl:message name="pushPreAuthorForAlipaySoapIn">
+<wsdl:part name="parameters" element="tns:pushPreAuthorForAlipay"/>
+</wsdl:message>
+<wsdl:message name="pushPreAuthorForAlipaySoapOut">
+<wsdl:part name="parameters" element="tns:pushPreAuthorForAlipayResponse"/>
+</wsdl:message>
+<wsdl:message name="sendReportForAlipaySoapIn">
+<wsdl:part name="parameters" element="tns:sendReportForAlipay"/>
+</wsdl:message>
+<wsdl:message name="sendReportForAlipaySoapOut">
+<wsdl:part name="parameters" element="tns:sendReportForAlipayResponse"/>
+</wsdl:message>
+<wsdl:message name="unbindMedicalCardForAlipaySoapIn">
+<wsdl:part name="parameters" element="tns:unbindMedicalCardForAlipay"/>
+</wsdl:message>
+<wsdl:message name="unbindMedicalCardForAlipaySoapOut">
+<wsdl:part name="parameters" element="tns:unbindMedicalCardForAlipayResponse"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserSoapIn">
+<wsdl:part name="parameters" element="tns:refundSingleToAlipayUser"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserSoapOut">
+<wsdl:part name="parameters" element="tns:refundSingleToAlipayUserResponse"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeSoapIn">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationFreeze"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeSoapOut">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationFreezeResponse"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeSoapIn">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationUnFreeze"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeSoapOut">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationUnFreezeResponse"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplySoapIn">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationFreezeApply"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplySoapOut">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationFreezeApplyResponse"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQuerySoapIn">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationQuery"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQuerySoapOut">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationQueryResponse"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPaySoapIn">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationPay"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPaySoapOut">
+<wsdl:part name="parameters" element="tns:doPreAuthorizationPayResponse"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQuerySoapIn">
+<wsdl:part name="parameters" element="tns:doSingleTradeQuery"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQuerySoapOut">
+<wsdl:part name="parameters" element="tns:doSingleTradeQueryResponse"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserSoapIn">
+<wsdl:part name="parameters" element="tns:refundToAlipayUser"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserSoapOut">
+<wsdl:part name="parameters" element="tns:refundToAlipayUserResponse"/>
+</wsdl:message>
+<wsdl:message name="pushTemplateMessageHttpGetIn">
+<wsdl:part name="msgType" type="s:string"/>
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="first" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="keywords" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="urlParas" type="s:string"/>
+<wsdl:part name="rptType" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushTemplateMessageHttpGetOut"/>
+<wsdl:message name="pushMatcherMessageHttpGetIn">
+<wsdl:part name="msgType" type="s:string"/>
+<wsdl:part name="mobileNo" type="s:string"/>
+<wsdl:part name="identityCard" type="s:string"/>
+<wsdl:part name="first" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="keywords" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushMatcherMessageHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageHttpGetIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="visitDate" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageHttpGetOut"/>
+<wsdl:message name="pushPayForAlipayHttpGetIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="payMentID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushPayForAlipayHttpGetOut"/>
+<wsdl:message name="pushNewPreAuthorForAlipayHttpGetIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+<wsdl:part name="outOrderNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="freezeFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushNewPreAuthorForAlipayHttpGetOut"/>
+<wsdl:message name="pushPreAuthorForAlipayHttpGetIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+<wsdl:part name="auth_no" type="s:string"/>
+<wsdl:part name="out_request_no" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="mixfee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushPreAuthorForAlipayHttpGetOut"/>
+<wsdl:message name="sendReportForAlipayHttpGetIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="patId" type="s:string"/>
+<wsdl:part name="reqNo" type="s:string"/>
+<wsdl:part name="applyNo" type="s:string"/>
+<wsdl:part name="techNo" type="s:string"/>
+<wsdl:part name="type" type="s:string"/>
+<wsdl:part name="id" type="s:string"/>
+<wsdl:part name="isRead" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="sendReportForAlipayHttpGetOut"/>
+<wsdl:message name="unbindMedicalCardForAlipayHttpGetIn">
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="cardNo" type="s:string"/>
+<wsdl:part name="alipayUserID" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="unbindMedicalCardForAlipayHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserHttpGetIn">
+<wsdl:part name="alipay_trade_no" type="s:string"/>
+<wsdl:part name="refund_batch_no" type="s:string"/>
+<wsdl:part name="refund_fee" type="s:string"/>
+<wsdl:part name="refund_reason" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeHttpGetIn">
+<wsdl:part name="outOrderNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="freezeFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeHttpGetIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplyHttpGetIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplyHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQueryHttpGetIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outOrderNo" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPayHttpGetIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="bodyDesc" type="s:string"/>
+<wsdl:part name="subjectDesc" type="s:string"/>
+<wsdl:part name="buyerId" type="s:string"/>
+<wsdl:part name="outTradeNo" type="s:string"/>
+<wsdl:part name="totalFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPayHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQueryHttpGetIn">
+<wsdl:part name="outOrderNo" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQueryHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserHttpGetIn">
+<wsdl:part name="alipay_trade_no" type="s1:StringArray"/>
+<wsdl:part name="refund_batch_no" type="s:string"/>
+<wsdl:part name="refund_fee" type="s1:StringArray"/>
+<wsdl:part name="refund_reason" type="s1:StringArray"/>
+<wsdl:part name="count" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserHttpGetOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="pushTemplateMessageHttpPostIn">
+<wsdl:part name="msgType" type="s:string"/>
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="first" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="keywords" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="urlParas" type="s:string"/>
+<wsdl:part name="rptType" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushTemplateMessageHttpPostOut"/>
+<wsdl:message name="pushMatcherMessageHttpPostIn">
+<wsdl:part name="msgType" type="s:string"/>
+<wsdl:part name="mobileNo" type="s:string"/>
+<wsdl:part name="identityCard" type="s:string"/>
+<wsdl:part name="first" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="keywords" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushMatcherMessageHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageHttpPostIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="visitDate" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushEvaluateMessageHttpPostOut"/>
+<wsdl:message name="pushPayForAlipayHttpPostIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="payMentID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushPayForAlipayHttpPostOut"/>
+<wsdl:message name="pushNewPreAuthorForAlipayHttpPostIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+<wsdl:part name="outOrderNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="freezeFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushNewPreAuthorForAlipayHttpPostOut"/>
+<wsdl:message name="pushPreAuthorForAlipayHttpPostIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="payType" type="s:string"/>
+<wsdl:part name="auth_no" type="s:string"/>
+<wsdl:part name="out_request_no" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+<wsdl:part name="mixfee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="pushPreAuthorForAlipayHttpPostOut"/>
+<wsdl:message name="sendReportForAlipayHttpPostIn">
+<wsdl:part name="userID" type="s:string"/>
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="title" type="s:string"/>
+<wsdl:part name="desc" type="s:string"/>
+<wsdl:part name="actionName" type="s:string"/>
+<wsdl:part name="isPush" type="s:string"/>
+<wsdl:part name="patId" type="s:string"/>
+<wsdl:part name="reqNo" type="s:string"/>
+<wsdl:part name="applyNo" type="s:string"/>
+<wsdl:part name="techNo" type="s:string"/>
+<wsdl:part name="type" type="s:string"/>
+<wsdl:part name="id" type="s:string"/>
+<wsdl:part name="isRead" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="sendReportForAlipayHttpPostOut"/>
+<wsdl:message name="unbindMedicalCardForAlipayHttpPostIn">
+<wsdl:part name="agreementID" type="s:string"/>
+<wsdl:part name="cardNo" type="s:string"/>
+<wsdl:part name="alipayUserID" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="unbindMedicalCardForAlipayHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserHttpPostIn">
+<wsdl:part name="alipay_trade_no" type="s:string"/>
+<wsdl:part name="refund_batch_no" type="s:string"/>
+<wsdl:part name="refund_fee" type="s:string"/>
+<wsdl:part name="refund_reason" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="refundSingleToAlipayUserHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeHttpPostIn">
+<wsdl:part name="outOrderNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="freezeFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeHttpPostIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationUnFreezeHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplyHttpPostIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outRequestNo" type="s:string"/>
+<wsdl:part name="amount" type="s:string"/>
+<wsdl:part name="remark" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationFreezeApplyHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQueryHttpPostIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="outOrderNo" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationQueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPayHttpPostIn">
+<wsdl:part name="authNo" type="s:string"/>
+<wsdl:part name="bodyDesc" type="s:string"/>
+<wsdl:part name="subjectDesc" type="s:string"/>
+<wsdl:part name="buyerId" type="s:string"/>
+<wsdl:part name="outTradeNo" type="s:string"/>
+<wsdl:part name="totalFee" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doPreAuthorizationPayHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQueryHttpPostIn">
+<wsdl:part name="outOrderNo" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="doSingleTradeQueryHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserHttpPostIn">
+<wsdl:part name="alipay_trade_no" type="s1:StringArray"/>
+<wsdl:part name="refund_batch_no" type="s:string"/>
+<wsdl:part name="refund_fee" type="s1:StringArray"/>
+<wsdl:part name="refund_reason" type="s1:StringArray"/>
+<wsdl:part name="count" type="s:string"/>
+</wsdl:message>
+<wsdl:message name="refundToAlipayUserHttpPostOut">
+<wsdl:part name="Body" element="tns:string"/>
+</wsdl:message>
+<wsdl:portType name="CRMWebServiceSoap">
+<wsdl:operation name="pushTemplateMessage">
+<wsdl:input message="tns:pushTemplateMessageSoapIn"/>
+<wsdl:output message="tns:pushTemplateMessageSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<wsdl:input message="tns:pushMatcherMessageSoapIn"/>
+<wsdl:output message="tns:pushMatcherMessageSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<wsdl:input message="tns:pushEvaluateMessageSoapIn"/>
+<wsdl:output message="tns:pushEvaluateMessageSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<wsdl:input message="tns:pushPayForAlipaySoapIn"/>
+<wsdl:output message="tns:pushPayForAlipaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<wsdl:input message="tns:pushNewPreAuthorForAlipaySoapIn"/>
+<wsdl:output message="tns:pushNewPreAuthorForAlipaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<wsdl:input message="tns:pushPreAuthorForAlipaySoapIn"/>
+<wsdl:output message="tns:pushPreAuthorForAlipaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<wsdl:input message="tns:sendReportForAlipaySoapIn"/>
+<wsdl:output message="tns:sendReportForAlipaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<wsdl:input message="tns:unbindMedicalCardForAlipaySoapIn"/>
+<wsdl:output message="tns:unbindMedicalCardForAlipaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<wsdl:input message="tns:refundSingleToAlipayUserSoapIn"/>
+<wsdl:output message="tns:refundSingleToAlipayUserSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<wsdl:input message="tns:doPreAuthorizationFreezeSoapIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<wsdl:input message="tns:doPreAuthorizationUnFreezeSoapIn"/>
+<wsdl:output message="tns:doPreAuthorizationUnFreezeSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<wsdl:input message="tns:doPreAuthorizationFreezeApplySoapIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeApplySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<wsdl:input message="tns:doPreAuthorizationQuerySoapIn"/>
+<wsdl:output message="tns:doPreAuthorizationQuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<wsdl:input message="tns:doPreAuthorizationPaySoapIn"/>
+<wsdl:output message="tns:doPreAuthorizationPaySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<wsdl:input message="tns:doSingleTradeQuerySoapIn"/>
+<wsdl:output message="tns:doSingleTradeQuerySoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<wsdl:input message="tns:refundToAlipayUserSoapIn"/>
+<wsdl:output message="tns:refundToAlipayUserSoapOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:portType name="CRMWebServiceHttpGet">
+<wsdl:operation name="pushTemplateMessage">
+<wsdl:input message="tns:pushTemplateMessageHttpGetIn"/>
+<wsdl:output message="tns:pushTemplateMessageHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<wsdl:input message="tns:pushMatcherMessageHttpGetIn"/>
+<wsdl:output message="tns:pushMatcherMessageHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<wsdl:input message="tns:pushEvaluateMessageHttpGetIn"/>
+<wsdl:output message="tns:pushEvaluateMessageHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<wsdl:input message="tns:pushPayForAlipayHttpGetIn"/>
+<wsdl:output message="tns:pushPayForAlipayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<wsdl:input message="tns:pushNewPreAuthorForAlipayHttpGetIn"/>
+<wsdl:output message="tns:pushNewPreAuthorForAlipayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<wsdl:input message="tns:pushPreAuthorForAlipayHttpGetIn"/>
+<wsdl:output message="tns:pushPreAuthorForAlipayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<wsdl:input message="tns:sendReportForAlipayHttpGetIn"/>
+<wsdl:output message="tns:sendReportForAlipayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<wsdl:input message="tns:unbindMedicalCardForAlipayHttpGetIn"/>
+<wsdl:output message="tns:unbindMedicalCardForAlipayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<wsdl:input message="tns:refundSingleToAlipayUserHttpGetIn"/>
+<wsdl:output message="tns:refundSingleToAlipayUserHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<wsdl:input message="tns:doPreAuthorizationFreezeHttpGetIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<wsdl:input message="tns:doPreAuthorizationUnFreezeHttpGetIn"/>
+<wsdl:output message="tns:doPreAuthorizationUnFreezeHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<wsdl:input message="tns:doPreAuthorizationFreezeApplyHttpGetIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeApplyHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<wsdl:input message="tns:doPreAuthorizationQueryHttpGetIn"/>
+<wsdl:output message="tns:doPreAuthorizationQueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<wsdl:input message="tns:doPreAuthorizationPayHttpGetIn"/>
+<wsdl:output message="tns:doPreAuthorizationPayHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<wsdl:input message="tns:doSingleTradeQueryHttpGetIn"/>
+<wsdl:output message="tns:doSingleTradeQueryHttpGetOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<wsdl:input message="tns:refundToAlipayUserHttpGetIn"/>
+<wsdl:output message="tns:refundToAlipayUserHttpGetOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:portType name="CRMWebServiceHttpPost">
+<wsdl:operation name="pushTemplateMessage">
+<wsdl:input message="tns:pushTemplateMessageHttpPostIn"/>
+<wsdl:output message="tns:pushTemplateMessageHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<wsdl:input message="tns:pushMatcherMessageHttpPostIn"/>
+<wsdl:output message="tns:pushMatcherMessageHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<wsdl:input message="tns:pushEvaluateMessageHttpPostIn"/>
+<wsdl:output message="tns:pushEvaluateMessageHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<wsdl:input message="tns:pushPayForAlipayHttpPostIn"/>
+<wsdl:output message="tns:pushPayForAlipayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<wsdl:input message="tns:pushNewPreAuthorForAlipayHttpPostIn"/>
+<wsdl:output message="tns:pushNewPreAuthorForAlipayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<wsdl:input message="tns:pushPreAuthorForAlipayHttpPostIn"/>
+<wsdl:output message="tns:pushPreAuthorForAlipayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<wsdl:input message="tns:sendReportForAlipayHttpPostIn"/>
+<wsdl:output message="tns:sendReportForAlipayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<wsdl:input message="tns:unbindMedicalCardForAlipayHttpPostIn"/>
+<wsdl:output message="tns:unbindMedicalCardForAlipayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<wsdl:input message="tns:refundSingleToAlipayUserHttpPostIn"/>
+<wsdl:output message="tns:refundSingleToAlipayUserHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<wsdl:input message="tns:doPreAuthorizationFreezeHttpPostIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<wsdl:input message="tns:doPreAuthorizationUnFreezeHttpPostIn"/>
+<wsdl:output message="tns:doPreAuthorizationUnFreezeHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<wsdl:input message="tns:doPreAuthorizationFreezeApplyHttpPostIn"/>
+<wsdl:output message="tns:doPreAuthorizationFreezeApplyHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<wsdl:input message="tns:doPreAuthorizationQueryHttpPostIn"/>
+<wsdl:output message="tns:doPreAuthorizationQueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<wsdl:input message="tns:doPreAuthorizationPayHttpPostIn"/>
+<wsdl:output message="tns:doPreAuthorizationPayHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<wsdl:input message="tns:doSingleTradeQueryHttpPostIn"/>
+<wsdl:output message="tns:doSingleTradeQueryHttpPostOut"/>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<wsdl:input message="tns:refundToAlipayUserHttpPostIn"/>
+<wsdl:output message="tns:refundToAlipayUserHttpPostOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="CRMWebServiceSoap" type="tns:CRMWebServiceSoap">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="pushTemplateMessage">
+<soap:operation soapAction="http://tempuri.org/pushTemplateMessage" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<soap:operation soapAction="http://tempuri.org/pushMatcherMessage" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<soap:operation soapAction="http://tempuri.org/pushEvaluateMessage" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<soap:operation soapAction="http://tempuri.org/pushPayForAlipay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<soap:operation soapAction="http://tempuri.org/pushNewPreAuthorForAlipay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<soap:operation soapAction="http://tempuri.org/pushPreAuthorForAlipay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<soap:operation soapAction="http://tempuri.org/sendReportForAlipay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<soap:operation soapAction="http://tempuri.org/unbindMedicalCardForAlipay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<soap:operation soapAction="http://tempuri.org/refundSingleToAlipayUser" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<soap:operation soapAction="http://tempuri.org/doPreAuthorizationFreeze" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<soap:operation soapAction="http://tempuri.org/doPreAuthorizationUnFreeze" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<soap:operation soapAction="http://tempuri.org/doPreAuthorizationFreezeApply" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<soap:operation soapAction="http://tempuri.org/doPreAuthorizationQuery" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<soap:operation soapAction="http://tempuri.org/doPreAuthorizationPay" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<soap:operation soapAction="http://tempuri.org/doSingleTradeQuery" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<soap:operation soapAction="http://tempuri.org/refundToAlipayUser" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="CRMWebServiceSoap12" type="tns:CRMWebServiceSoap">
+<soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="pushTemplateMessage">
+<soap12:operation soapAction="http://tempuri.org/pushTemplateMessage" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<soap12:operation soapAction="http://tempuri.org/pushMatcherMessage" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<soap12:operation soapAction="http://tempuri.org/pushEvaluateMessage" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<soap12:operation soapAction="http://tempuri.org/pushPayForAlipay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<soap12:operation soapAction="http://tempuri.org/pushNewPreAuthorForAlipay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<soap12:operation soapAction="http://tempuri.org/pushPreAuthorForAlipay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<soap12:operation soapAction="http://tempuri.org/sendReportForAlipay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<soap12:operation soapAction="http://tempuri.org/unbindMedicalCardForAlipay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<soap12:operation soapAction="http://tempuri.org/refundSingleToAlipayUser" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<soap12:operation soapAction="http://tempuri.org/doPreAuthorizationFreeze" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<soap12:operation soapAction="http://tempuri.org/doPreAuthorizationUnFreeze" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<soap12:operation soapAction="http://tempuri.org/doPreAuthorizationFreezeApply" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<soap12:operation soapAction="http://tempuri.org/doPreAuthorizationQuery" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<soap12:operation soapAction="http://tempuri.org/doPreAuthorizationPay" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<soap12:operation soapAction="http://tempuri.org/doSingleTradeQuery" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<soap12:operation soapAction="http://tempuri.org/refundToAlipayUser" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="CRMWebServiceHttpGet" type="tns:CRMWebServiceHttpGet">
+<http:binding verb="GET"/>
+<wsdl:operation name="pushTemplateMessage">
+<http:operation location="/pushTemplateMessage"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<http:operation location="/pushMatcherMessage"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<http:operation location="/pushEvaluateMessage"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<http:operation location="/pushPayForAlipay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<http:operation location="/pushNewPreAuthorForAlipay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<http:operation location="/pushPreAuthorForAlipay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<http:operation location="/sendReportForAlipay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<http:operation location="/unbindMedicalCardForAlipay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<http:operation location="/refundSingleToAlipayUser"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<http:operation location="/doPreAuthorizationFreeze"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<http:operation location="/doPreAuthorizationUnFreeze"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<http:operation location="/doPreAuthorizationFreezeApply"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<http:operation location="/doPreAuthorizationQuery"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<http:operation location="/doPreAuthorizationPay"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<http:operation location="/doSingleTradeQuery"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<http:operation location="/refundToAlipayUser"/>
+<wsdl:input>
+<http:urlEncoded/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="CRMWebServiceHttpPost" type="tns:CRMWebServiceHttpPost">
+<http:binding verb="POST"/>
+<wsdl:operation name="pushTemplateMessage">
+<http:operation location="/pushTemplateMessage"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushMatcherMessage">
+<http:operation location="/pushMatcherMessage"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="pushEvaluateMessage">
+<http:operation location="/pushEvaluateMessage"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushPayForAlipay">
+<http:operation location="/pushPayForAlipay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushNewPreAuthorForAlipay">
+<http:operation location="/pushNewPreAuthorForAlipay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="pushPreAuthorForAlipay">
+<http:operation location="/pushPreAuthorForAlipay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="sendReportForAlipay">
+<http:operation location="/sendReportForAlipay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output/>
+</wsdl:operation>
+<wsdl:operation name="unbindMedicalCardForAlipay">
+<http:operation location="/unbindMedicalCardForAlipay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundSingleToAlipayUser">
+<http:operation location="/refundSingleToAlipayUser"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreeze">
+<http:operation location="/doPreAuthorizationFreeze"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationUnFreeze">
+<http:operation location="/doPreAuthorizationUnFreeze"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationFreezeApply">
+<http:operation location="/doPreAuthorizationFreezeApply"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationQuery">
+<http:operation location="/doPreAuthorizationQuery"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doPreAuthorizationPay">
+<http:operation location="/doPreAuthorizationPay"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="doSingleTradeQuery">
+<http:operation location="/doSingleTradeQuery"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="refundToAlipayUser">
+<http:operation location="/refundToAlipayUser"/>
+<wsdl:input>
+<mime:content type="application/x-www-form-urlencoded"/>
+</wsdl:input>
+<wsdl:output>
+<mime:mimeXml part="Body"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="CRMWebService">
+<wsdl:port name="CRMWebServiceSoap" binding="tns:CRMWebServiceSoap">
+<soap:address location="http://172.20.1.248:8880/forcrm/CRMWebService.asmx"/>
+</wsdl:port>
+<wsdl:port name="CRMWebServiceSoap12" binding="tns:CRMWebServiceSoap12">
+<soap12:address location="http://172.20.1.248:8880/forcrm/CRMWebService.asmx"/>
+</wsdl:port>
+<wsdl:port name="CRMWebServiceHttpGet" binding="tns:CRMWebServiceHttpGet">
+<http:address location="http://172.20.1.248:8880/forcrm/CRMWebService.asmx"/>
+</wsdl:port>
+<wsdl:port name="CRMWebServiceHttpPost" binding="tns:CRMWebServiceHttpPost">
+<http:address location="http://172.20.1.248:8880/forcrm/CRMWebService.asmx"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

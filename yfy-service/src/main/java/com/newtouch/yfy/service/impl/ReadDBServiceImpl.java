@@ -8,10 +8,12 @@ import org.springframework.stereotype.Service;
 import com.newtouch.yfy.api.AppoInfo;
 import com.newtouch.yfy.api.AppoResources;
 import com.newtouch.yfy.api.Dept;
+import com.newtouch.yfy.api.ServiceLog;
 import com.newtouch.yfy.dao.CheckAuthorityfyDao;
 import com.newtouch.yfy.dao.ReadAppoInfoDBDao;
 import com.newtouch.yfy.dao.ReadAppoResourceDBDao;
 import com.newtouch.yfy.dao.ReadDBDao;
+import com.newtouch.yfy.dao.WriteLogDao;
 import com.newtouch.yfy.service.ReadDBService;
 
 @Service
@@ -30,6 +32,9 @@ public class ReadDBServiceImpl implements ReadDBService{
 	@Autowired
 	CheckAuthorityfyDao  policyDaoImpl ;
 	
+	@Autowired
+	private WriteLogDao writeLogDaoImpl;
+
 	@Override
 	public List<Dept> getDeptData() {
 		
@@ -57,5 +62,10 @@ public class ReadDBServiceImpl implements ReadDBService{
 	public void dowriteToMysqlYY07(Dept dept) {
 		readDBDaoImpl.save(dept);
 	}
-	
+	/**
+	 *  保存接口调用日志表数据
+	 */
+	public void doserviceLog(ServiceLog serviceLog){
+		writeLogDaoImpl.save(serviceLog);
+	}
 }

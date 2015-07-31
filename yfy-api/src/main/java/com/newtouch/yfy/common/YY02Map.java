@@ -118,7 +118,7 @@ public static String  parseListToStr(List<AppoResources>  list ,String xml){
         str.append("<result>");
 		if(list!=null){
 			str.append("OK</result>");
-			str.append("<days><day date='2015-07-28'");
+			str.append("<days><day date='2015-08-03'");
 			int num =0;
 			if(list.size()>0 && !list.isEmpty()){
 				for(AppoResources appoResources : list){

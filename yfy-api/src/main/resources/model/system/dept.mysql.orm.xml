@@ -144,5 +144,41 @@
 			<!-- <transient name="id"/> -->
 		</attributes>
 	</entity>
+	<entity class="ServiceLog">
+		<table name="servicelog" />
+		<attributes>
+			<id name="id" >
+				<column name="logId" unique="true" nullable="false"
+					precision="11" scale="0" insertable="false" updatable="false" />
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="applyID">
+				<column name="ApplyID" length="50" nullable="true"/>
+			</basic>
+			<basic name="ip">
+				<column name="IP" length="20" nullable="true"/>
+			</basic>
+			<basic name="methodName">
+				<column name="MethodName" length="1000" nullable="true"/>
+			</basic>
+			<basic name="inputValue">
+				<column name="InputValue" length="8000" nullable="true"/>
+			</basic>
+			<basic name="outputValue">
+				<column name="OutputValue" length="8000" nullable="true"/>
+			</basic>
+			<basic name="fcd">
+				<column name="FCD" length="20" nullable="true"/>
+			</basic>
+			<basic name="diversityTime">
+				<column name="DiversityTime" length="20" nullable="true"/>
+			</basic>
+			<basic name="userId">
+				<column name="UserId" length="100" nullable="true"/>
+			</basic>
+			 
+			<!-- <transient name="id"/> -->
+		</attributes>
+	</entity>
 	
 </entity-mappings>

@@ -12,17 +12,17 @@ import javax.jws.WebService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yfy.memcach.util.MemcachedUtil;
 
 import com.newtouch.yfy.api.*;
 import com.newtouch.yfy.common.Common;
 import com.newtouch.yfy.common.YY02Map;
 import com.newtouch.yfy.common.YY07Map;
 import com.newtouch.yfy.common.ZfbXmlAnalysis;
+import com.yfy.memcach.util.MemcachedUtil;
 import com.yfy.mq.IQueueSender;
 
 
-@WebService(endpointInterface = "com.yfy.webservice.YuYue") 
+@WebService(endpointInterface = "com.yfy.webservice.YuYue")  
 public class YuYueImpl implements YuYue {
 	protected final Logger logger = LoggerFactory.getLogger(super.getClass());
 	/**
