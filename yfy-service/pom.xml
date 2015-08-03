@@ -33,5 +33,10 @@
 			<groupId>com.newtouch.yfy</groupId>
 			<artifactId>yfy-dao</artifactId>
 		</dependency>
+			<dependency>
+			  <groupId>javax.servlet</groupId>
+			  <artifactId>servlet-api</artifactId>
+			  <version>2.5</version>
+			</dependency>
 	</dependencies>
 </project>

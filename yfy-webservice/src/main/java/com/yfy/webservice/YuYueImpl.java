@@ -1,5 +1,6 @@
 package com.yfy.webservice;
 
+import java.rmi.RemoteException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,11 +16,13 @@ import org.slf4j.LoggerFactory;
 
 import com.newtouch.yfy.api.*;
 import com.newtouch.yfy.common.Common;
+import com.newtouch.yfy.common.XmlStrUtil;
 import com.newtouch.yfy.common.YY02Map;
 import com.newtouch.yfy.common.YY07Map;
 import com.newtouch.yfy.common.ZfbXmlAnalysis;
 import com.yfy.memcach.util.MemcachedUtil;
 import com.yfy.mq.IQueueSender;
+import com.yfypt.webservice.alipay.AlipayServiceSoapProxy;
 
 
 @WebService(endpointInterface = "com.yfy.webservice.YuYue")  
@@ -43,20 +46,34 @@ public class YuYueImpl implements YuYue {
 	}
 	/**
 	 * 对外调用接口的实现
+	 * @throws RemoteException 
 	 */
 	@Override
-	public String alipayBooking(String xmlMessage) {
+	public String alipayBooking(String xmlMessage) throws RemoteException {
 		Map<String, Object> map = new HashMap<String, Object>();
 		ZfbXmlAnalysis zfbxml = new ZfbXmlAnalysis();
+		XmlStrUtil  xmlstrutil = new XmlStrUtil();
+		AlipayServiceSoapProxy  alipayService = new AlipayServiceSoapProxy();
 		map = zfbxml.zfbXml(xmlMessage);
 		String callType = map.get("Optype").toString();
+		map.put("Optypeyfy", "1");
+		String yfyInxml= xmlstrutil.yfyXml(map);
+		String yfyOutxml = alipayService.alipay_Authoration_ApplyAndUser(yfyInxml);
+		map.clear();
+		map = zfbxml.zfbXml(yfyOutxml);
+		
+		String flag = map.get("result").toString();
 		String str="";
-		if("02".equals(callType)){
-			str = alipayBookingYY02( callType, xmlMessage);
-		}else if("01".equals(callType)){
-			str = alipayBookingYY07( callType, xmlMessage);
+		if("OK".equals(flag)){
+			if("02".equals(callType)){
+				str = alipayBookingYY02( callType, xmlMessage);
+			}else if("01".equals(callType)){
+				str = alipayBookingYY07( callType, xmlMessage);
+			}else{
+				str ="<root><head><parameter><Optype></Optype><hashKey></hashKey><HospitalID></HospitalID><AlipayID></AlipayID> <AgreementID></AgreementID>  <TemplateID></TemplateID><CardNo></CardNo> </parameter>  </head><body><result>FALSE</result><DataTable> <rows><row issucess=\"\" message=\"传入参数Optype有误\" resourcenumber=\"\" reservationid=\"\" queuenumber=\"\"></row></rows></DataTable></body></root>";
+			}
 		}else{
-			str ="<root><head><parameter><Optype></Optype><hashKey></hashKey><HospitalID></HospitalID><AlipayID></AlipayID> <AgreementID></AgreementID>  <TemplateID></TemplateID><CardNo></CardNo> </parameter>  </head><body><result>FALSE</result><DataTable> <rows><row issucess=\"\" message=\"传入参数Optype有误\" resourcenumber=\"\" reservationid=\"\" queuenumber=\"\"></row></rows></DataTable></body></root>";
+			str ="<root><head><parameter><Optype></Optype><hashKey></hashKey><HospitalID></HospitalID><AlipayID></AlipayID> <AgreementID></AgreementID>  <TemplateID></TemplateID><CardNo></CardNo> </parameter>  </head><body><result>FALSE</result><DataTable> <rows><row issucess=\"\" message=\"用户未授权\" resourcenumber=\"\" reservationid=\"\" queuenumber=\"\"></row></rows></DataTable></body></root>";
 		}
 		System.out.println(str);
 		return str;

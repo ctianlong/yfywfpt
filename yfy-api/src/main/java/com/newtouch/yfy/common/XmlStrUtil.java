@@ -1,29 +1,11 @@
 package com.newtouch.yfy.common;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.StringReader;
-import java.io.StringWriter;
-import java.net.URI;
-import java.util.HashMap;
 import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
-import org.omg.Dynamic.Parameter;
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 
@@ -80,7 +62,25 @@ public class XmlStrUtil {
     	strAll.append("</DataTable></body></root>");
     	return strAll.toString();
     }
-    
+    /**
+     * 封装调用yfy接口参数
+     * @param map
+     * @return
+     */
+    public  String  yfyXml(Map map){
+        StringBuilder yfystr = new StringBuilder();
+        yfystr.append("<root> <head><parameter><hashKey>1dcc108c-45e2-4bac-a05f-0a86e061be9f</hashKey><ApplyIDFrom>");
+        yfystr.append(map.get("hashKey"));
+        yfystr.append("</ApplyIDFrom><AlipayID>");
+        yfystr.append(map.get("AlipayID"));
+        yfystr.append("</AlipayID><AgreementID>");
+        yfystr.append(map.get("AgreementID"));
+        yfystr.append("</AgreementID><Optype>");
+        yfystr.append(map.get("Optypeyfy"));
+        yfystr.append("</Optype></parameter></head><body /></root>");
+     	
+     	return yfystr.toString();
+     }
     
 	}
 	

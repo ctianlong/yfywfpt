@@ -139,7 +139,8 @@ public class ZfbXmlAnalysis {
    static Map<String,Object> mapAll = new HashMap<String, Object>();
     
     public static void main(String[] args) {  
-    	String inputxml="<root>  <head>    <parameter><hashKey>640bbc36-b81f-4afa-956e-43b7f04f6968</hashKey>      <AlipayID>oTqovuOnGvo9G7z2XxfQ4btMcQsU</AlipayID>      <BookID>1795632</BookID>      <OptypeReg>0</OptypeReg>      <Isbook>1</Isbook>      <AgreementID>6006219295</AgreementID>    </parameter>  </head>  <body /></root>";
+    	String inputxml="<root><head><parameter><hashKey>1dcc108c-45e2-4bac-a05f-0a86e061be9f</hashKey><ApplyIDFrom>50ce51cf-6eb4-4727-9f27-a8e1f3c095b6</ApplyIDFrom><AlipayID>rG0hVXiyZScGap3tc0qHPBlkXv4PbBuA5XowSnf6rfveMcWdmuZUZ6zT1++5zVLL01</AlipayID><AgreementID>20150706028655229290</AgreementID><Optype>1</Optype></parameter></head><body><result>err</result><errMsg>hashKey密钥有误!</errMsg></body></root>";
+    	//"<root>  <head>    <parameter><hashKey>640bbc36-b81f-4afa-956e-43b7f04f6968</hashKey>      <AlipayID>oTqovuOnGvo9G7z2XxfQ4btMcQsU</AlipayID>      <BookID>1795632</BookID>      <OptypeReg>0</OptypeReg>      <Isbook>1</Isbook>      <AgreementID>6006219295</AgreementID>    </parameter>  </head>  <body /></root>";
     	 
     	Map<String,Object> map = new HashMap<String, Object>();
     	map = zfbXml(inputxml);
@@ -152,6 +153,8 @@ public class ZfbXmlAnalysis {
         String rootName=root.getNodeName();
         NodeList list=root.getElementsByTagName("head");//获得节点元素
         showElem(list);
+        NodeList listb=root.getElementsByTagName("body");//获得节点元素
+        showElem(listb);
         System.out.println(mapAll.toString());
     	return mapAll;
     }
@@ -177,7 +180,7 @@ public class ZfbXmlAnalysis {
 		              //得到属性值
 		              String attributeValue=attribute.getNodeValue();
 		             // System.out.println("属性值:"+attributeValue);
-		             
+		              mapAll.put(attributeName, attributeValue);
 		          }//打印出结果属性名
 		            
 		            
