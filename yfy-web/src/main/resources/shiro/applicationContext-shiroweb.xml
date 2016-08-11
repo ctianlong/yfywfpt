@@ -135,6 +135,8 @@
 				<entry key="perms" value-ref="ajaxPermissions"/>
 			</util:map>
 		</property>
+		
+		<!-- 不写也没有关系，因为在 bean filterChainDefinitionManager 实例化时已经调用 initPermission()，已经将拦截器链信息(包括从数据库中搜索的权限信息)注入其中 -->
 		<property name="filterChainDefinitionMap" ref="filterChainDefinitionManager"/>
 	</bean>
 
@@ -142,13 +144,12 @@
 	<bean  id="filterChainDefinitionManager" class="com.newtouch.lion.web.shiro.chain.ShiroFilterChainDefinitionManager">
 		<property name="filterChainDefinitions">
 			<value>
-				/resources/** = anon
-				/unauthorized.htm =anon
+				/resources/**=anon
+				/unauthorized.htm=anon
 				/loginerror.htm=anon
-				/login.htm = authc
-				/unauthorized.htm = authc
+				/login.htm=authc
 				/logout.htm=logoutFilter
-				<!--  /** = authc,forceLogoutFilter-->
+				<!-- /**=authc,forceLogoutFilter -->
 			</value>
 		</property>
 	</bean>

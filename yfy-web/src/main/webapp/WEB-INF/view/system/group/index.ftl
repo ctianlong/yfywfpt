@@ -93,16 +93,18 @@
 							<th data-field="nameZh" style="width:100px;">
 							 	用户组名称(中文)
 							</th>
-							<th data-field="description" style="width:100px;">
+							<th data-field="description" style="width:150px;">
 								描述
 							</th>
+							<!--
 							<th data-field="editable" style="width:30px;" align="center"  data-formatter="formatterEidtable">
 								可编辑
-							</th>							
-							<th data-field="createdDate" style="width:100px;">
+							</th>
+							-->							
+							<th data-field="createdDate" style="width:80px;">
 								创建时间
 							</th>
-							<th data-field="updatedDate" style="width:100px;">
+							<th data-field="updatedDate" style="width:80px;">
 								更新时间
 							</th>
 						</tr>
@@ -196,7 +198,7 @@
 														<th data-field="nameZh"  width="200px;" >
 														 	角色组名称(中文)
 														</th>
-														<th data-field="employeeCode" width="200px;" >
+														<th data-field="description" width="200px;" >
 															 描述
 														</th>
 													</tr>

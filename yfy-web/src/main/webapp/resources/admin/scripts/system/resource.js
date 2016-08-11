@@ -42,7 +42,8 @@ $(function() {
 			 return;
 		 }
 		 addDialog.find('.modal-header h4 span').text('编辑资源');
-     addDialog.modal('toggle');
+		 addDialog.modal('toggle');
+		 addForm.reset();
 		 addForm.fill(row);
    
      $('#sysresourcetype').combo('val',[row.type]);
@@ -109,7 +110,6 @@ function submitForm(frm){
 
 //添加后&编辑后提交
 function successAddFrm(data,arg,id){
-  //TODO
   if(data!==null&&!(data.hasError)){
   	lion.util.success('提示',data.message);
   	$('#basic').modal('toggle');

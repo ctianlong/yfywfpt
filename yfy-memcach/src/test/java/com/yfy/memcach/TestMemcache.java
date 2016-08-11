@@ -20,7 +20,8 @@ public class TestMemcache {
 	    @Test  
 	    public void TestMem(){  
 	        memCachedClient.set("name", "han");  
-	          
+	        System.out.println(memCachedClient);
+	        
 	        System.out.println(memCachedClient.get("name"));  
 	    }  
 	      

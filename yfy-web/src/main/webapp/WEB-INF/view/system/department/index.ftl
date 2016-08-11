@@ -58,19 +58,29 @@
 			</div>-->
 		
 			<div class="col-md-12 margin-bottom-10" id="toolbar">
+				<@shiro.hasPermission name="system.department:add">
 				<a id="btnAdd" class="btn btn-sm yellow" data-toggle="modal" href="#basic">
 					<i class="fa fa-plus"></i>  <@spring.message "common.toolbar.btn.add.text"/> </a>
+				</@shiro.hasPermission>
+				<@shiro.hasPermission name="system.department:edit">
 				<a id="btnEdit" class="btn btn-sm red" role="button">
 					<i class="fa fa-edit"></i>
 					 <@spring.message "common.toolbar.btn.edit.text"/> 				 
 				</a>
+				</@shiro.hasPermission>
+				<@shiro.hasPermission name="system.department:delete">
 				<a href="javascript:void(0)" id="btnDelete" class="btn btn-sm purple"><i class="fa fa-times"></i> <@spring.message "common.toolbar.btn.delete.text"/> </a>
+				</@shiro.hasPermission>
+				<@shiro.hasPermission name="system.department:list">
 				<a href="javascript:void(0)" id="btnRefresh" class="btn btn-sm blue">
 					<i class="fa fa-refresh"></i> <@spring.message "common.toolbar.btn.reload.text"/> 
 				</a>
+				</@shiro.hasPermission>
+				<@shiro.hasPermission name="system.department:export">
 				<a href="javascript:void(0)" id="btnExport"  class="btn btn-sm green">
 					<i class="fa  fa-file-excel-o"></i> <@spring.message "common.toolbar.btn.export.text"/> 
 				</a>
+				</@shiro.hasPermission>
 			</div>
 			<div class="col-md-12">
 				 <table  id="sys_department_lists" class="easyui-treegrid" fit="false" style="height:400px;width:auto" fitColumns="true"
@@ -81,16 +91,16 @@
                 pageSize: 15,
                 pageList: [5,10,15,30],
                 idField: 'id',
-                treeField: 'nameEn'
+                treeField: 'nameZh'
             ">
 				<thead>
 					<tr>
-						<th field="id"  width="10" align="center" halign="center"checkbox="true"sortable="true"order="asc">id</th>
-				 		<th field="parentDepartmentId"  width="10" align="center" halign="center"sortable="true"order="asc"hidden="true">parentDepartmentId</th>
-				 		<th field="nameEn"  width="80" align="left" halign="left"sortable="true"order="asc">部门名称(英文)</th>
-				 		<th field="nameZh"  width="80" align="left" halign="left"sortable="true"order="asc">部门名称(中文)</th>
+						<th field="id"  width="10" align="center" halign="center" checkbox="true" sortable="true" order="asc">id</th>
+				 		<th field="_parentId"  width="10" align="center" halign="center" sortable="true" order="asc" hidden="true">parentDepartmentId</th>
+				 		<th field="nameEn"  width="80" align="left" halign="left" sortable="true" order="asc" hidden="true">部门名称(英文)</th>
+				 		<th field="nameZh"  width="80" align="left" halign="left" sortable="true" order="asc">部门名称(中文)</th>
 				 		<th field="departmentNo"  width="80" align="center" halign="center" sortable="true" order="asc">部门编号</th>
-				 		<th field="description"  width="120" align="left" halign="left" sortable="true" order="asc">部门描述</th>
+				 		<th field="description"  width="80" align="center" halign="left" sortable="true" order="asc">部门描述</th>
 				 		<th field="editable"  width="20" align="center" halign="center" sortable="true" order="asc" formatter="formatterEidtable">可编辑</th>
 					</tr>
 				</thead>

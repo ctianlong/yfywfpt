@@ -32,7 +32,6 @@ $(function() {
 	 });
 	 //保存方法
 	 $('#btnSave').click(function(){
-
 	 	addForm.submit();
 	 });
 	  //编辑
@@ -91,7 +90,6 @@ function submitForm(frm){
 
 //添加后&编辑后提交
 function successAddFrm(data,arg,id){
-  //TODO
   if(data!==null&&!(data.hasError)){
   	lion.util.success('提示',data.message);
   	$('#basic').modal('toggle');
@@ -102,17 +100,18 @@ function successAddFrm(data,arg,id){
   		gmsg+=data.errorMessage[msg];
   	}
   	if(lion.util.isEmpty(gmsg)){
-  		gmsg='添加用户失败';
+  		gmsg='操作失败';
   	}
   	lion.util.error('提示',gmsg);
   }else{
-  	lion.util.error('提示','添加用户失败');
+  	lion.util.error('提示','操作失败');
   }
 }
 //请求失败后信息
-function errorRequest(data,arg){
-	lion.util.error('提示','网络连接异常');
-}
+//使用全局请求错误函数，在admin-common.js中
+//function errorRequest(data,arg){
+//	lion.util.error('提示','网络连接异常');
+//}
 function successForDelete(data,arg){
    if(data!==null&&!(data.hasError)){
       lion.util.success('提示',data.message);
@@ -140,13 +139,13 @@ handleVForm=function(vForm,submitCallBackfn){
         ignore: '', 
         messages: {
         	nameZh:{required:'请输入部门名称(中文)',rangelength:'部门名称(中文)的最大长度为{0}和{1}字符之间'},
-        	nameEn:{required:'请输入部门名称(英文)',rangelength:'部门名称(中文)的最大长度为{0}和{1}字符之间'},
-        	departmentNo:{required:'请输入部门编号',rangelength:'部门编号(中文)的最大长度为{0}和{1}字符之间'},
+        	nameEn:{required:'请输入部门名称(英文)',rangelength:'部门名称(英文)的最大长度为{0}和{1}字符之间'},
+        	departmentNo:{required:'请输入部门编号',rangelength:'部门编号的最大长度为{0}和{1}字符之间'},
         },
         rules:{
-            nameZh:{required:true,rangelength:[4,128]},
-            nameEn:{required:true,rangelength:[4,128]},
-            departmentNo:{required:true,rangelength:[4,30]}
+            nameZh:{required:true,rangelength:[1,128]},
+            nameEn:{required:true,rangelength:[1,128]},
+            departmentNo:{required:true,rangelength:[1,30]}
         },
         invalidHandler: function (event, validator) {             
             addSuccess.hide();
@@ -180,9 +179,6 @@ handleVForm=function(vForm,submitCallBackfn){
     });
 };
 
-
-
-//判断是否编辑
 //判断是否编辑
 function formatterEidtable(data,type,full) { 
 	console.dir(data);

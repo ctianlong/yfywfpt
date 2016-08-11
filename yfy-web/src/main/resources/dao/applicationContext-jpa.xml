@@ -20,6 +20,14 @@
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="persistenceProvider" ref="persistenceProvider" />
+		
+		<property name="persistenceUnitName" value="entityUnit" />
+		<property name="packagesToScan">
+			<list>			
+				<value>com.newtouch.yfy.api</value>
+			</list>
+		</property>
+		 
 		<!-- <property name="persistenceXmlLocation" value="classpath:META-INF/persistence-mysql.xml"></property>--> 
 		<property name="mappingResources">
 			<list>
@@ -31,7 +39,8 @@
 				<value>model/system/bas_system.${database.prefix}.orm.xml</value>
 				<value>model/system/bas_tasks.${database.prefix}.orm.xml</value>
 				<value>model/system/bas_reminder.${database.prefix}.orm.xml</value>
-				<value>model/system/dept.mysql.orm.xml</value> 
+				<value>model/system/dept.${database.prefix}.orm.xml</value>
+				<value>model/system/customperformanceproject.${database.prefix}.orm.xml</value>
 			</list>
 		</property>
 		<property name="jpaProperties">

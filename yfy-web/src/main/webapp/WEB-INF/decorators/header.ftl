@@ -4,9 +4,11 @@
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
+		<!--
 			<a href="${base}/index.htm">
 			<img src="${base}/resources/logo/logo.png" alt="logo" class="logo-default"/>
 			</a>
+		-->
 			<div class="menu-toggler sidebar-toggler">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
 			</div>
@@ -71,6 +73,7 @@
 					<li class="separator hide"></li>
 					<!-- BEGIN NOTIFICATION DROPDOWN -->
 					<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<!--
 					<li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 						<i class="icon-bell"></i>
@@ -177,6 +180,7 @@
 							</li>
 						</ul>
 					</li>
+				-->
 					<!-- END NOTIFICATION DROPDOWN -->
 					<li class="separator hide">
 					</li>
@@ -386,13 +390,22 @@
 						<ul class="dropdown-menu dropdown-menu-default">
 							<li>
 								<a href="${base}/system/account/index.htm">
-								<i class="icon-user"></i>我的个人资料 </a>
+								<i class="icon-user"></i>个人资料 </a>
 							</li>
-							
 							<li>
 								<a href="${base}/system/account/calendar.htm">
-								<i class="icon-calendar"></i>我的待办事项</a>
+								<i class="icon-calendar"></i>待办事项</a>
 							</li>
+							
+							<!-- 会导致左侧菜单无法正常展开 -->
+							
+							<li>
+								<a href="${base}/system/account/notifications.htm">
+								<i class="icon-calendar"></i>通知消息</a>
+							</li>
+							
+							
+							<!--
 							<li>
 								<a href="${base}/system/account/index.htm#tab_1_3">
 								<i class="icon-user"></i>修改密码 </a>
@@ -401,6 +414,8 @@
 								<a href="${base}/system/account/index.htm#tab_1_2">
 								<i class="icon-user"></i>修改头像 </a>
 							</li>
+							-->
+							
 							<!--<li>
 								<a href="${base}/system/account/inbox.htm">
 								<i class="icon-envelope-open"></i>我的收件箱 

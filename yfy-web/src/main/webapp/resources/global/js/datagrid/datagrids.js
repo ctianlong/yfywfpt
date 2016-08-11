@@ -71,7 +71,7 @@
         column:{field:'',//字段名称
                 formatter:'',//格式化函数
                 sortable:true,//默认为可排序 true
-                sortDir:'acs', //排序默认升序：desc
+                sortdir:'asc', //排序默认升序：desc
                 checkbox:false,//默认函数
                }//默认的列的模型
 	};
@@ -192,7 +192,7 @@
               //确定 需要排序的第一列排序
               if(firstSortable===-1&&!item.checkbox&&item.sortable){
                   firstSortable=key;
-                  firstSortDir=item.sortDir.toLowerCase()==='asc'?'asc':'desc';
+                  firstSortDir=item.sortdir.toLowerCase()==='asc'?'asc':'desc';
                   that.options.order.push(firstSortable);
                   that.options.order.push(firstSortDir);
               }

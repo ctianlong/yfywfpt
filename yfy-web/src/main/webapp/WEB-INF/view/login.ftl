@@ -14,7 +14,8 @@ Author: wanglijun
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title><@spring.message "login.page.title"/></title>
+<!-- <title><@spring.message "login.page.title"/></title> -->
+<title>医院绩效管理系统</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -48,9 +49,11 @@ Author: wanglijun
 <!-- END SIDEBAR TOGGLER BUTTON -->
 <!-- BEGIN LOGO -->
 <div class="logo">
+	<!--
 	<a href="index.htm">
 		<img src="${base}/resources/logo/logo-login.png" alt=""/>
 	</a>
+	-->
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
@@ -58,7 +61,8 @@ Author: wanglijun
 	<!-- BEGIN LOGIN FORM -->
 	<form class="login-form"  method="post"  action="${base}/login.htm">
 		<h3 class="form-title">
-			<@spring.message "login.dialog.title.welcome"/>
+			医院绩效管理系统
+			<!-- <@spring.message "login.dialog.title.welcome"/> -->
 		</h3>
 		<div class="alert alert-danger display-hide" <#if  login_error?length gt 0>style="display:block;"</#if> >
 			<button class="close" data-close="alert"></button>
@@ -113,9 +117,11 @@ Author: wanglijun
 	</form>
 	<!-- END FORGOT PASSWORD FORM -->
 </div>
+<!--
 <div class="copyright">
 <@spring.message "login.footer.copyright"/>
 </div>
+-->
 <!-- END LOGIN -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>

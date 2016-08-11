@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	version="2.5"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
 	<display-name>NewTouch Framework Web Application</display-name>
-	<!-- Context Param Initialization Start -->
 	<context-param>
 		<param-name>webAppRootKey</param-name>
 		<param-value>Newtouch.web.root</param-value>
 	</context-param>
-	<!-- Spring Param -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:applicationContext-admin.xml</param-value>
@@ -18,10 +16,8 @@
 		<param-name>logbackConfigLocation</param-name>
 		<param-value>classpath:logback.xml</param-value>
 	</context-param>
-	<!-- Context Param Initialization End -->
-
-	<!-- Listener Definitions Start -->
-	<!-- 防止内存溢出监听器 -->
+	<!-- 防止发生java.beans.Introspector内存泄露,应将它配置在ContextLoaderListener的前面 -->
+	<!-- 详细描述见http://blog.csdn.net/jadyer/article/details/11991457 -->
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
@@ -31,23 +27,18 @@
 	<listener>
 		<listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
 	</listener>
-	<!---获取Spring Request -->
 	<listener>
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
 	</listener>
-	<!-- Listener Definitions End -->
-
-	<!-- Filter Definitions Start -->
-	<!--shiroFilter Definision -->
 	<filter>
 		<filter-name>shiroFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 		<init-param>
+			<!-- 该值缺省为false,表示生命周期由SpringApplicationContext管理,设置为true则表示由ServletContainer管理 -->
 			<param-name>targetFilterLifecycle</param-name>
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
-	<!--CharacterEncodingFilter Definision -->
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -60,7 +51,6 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
-	<!--Hibernate Session Open filter Definision -->
 	<filter>
 		<filter-name>OpenEntityManagerInViewFilter</filter-name>
 		<filter-class>
@@ -70,25 +60,18 @@
 			<param-value>entityManagerFactory</param-value>
 		</init-param>
 	</filter>
-	<!--SiteMash Definision -->
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
 	</filter>
-	<!-- Filter Definitions Start -->
-
-	<!-- Filter Mappings Start -->
-	<!--Hibernate Session Open filter mapping -->
 	<filter-mapping>
 		<filter-name>OpenEntityManagerInViewFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	<!--characterEncodingFilter mapping -->
 	<filter-mapping>
 		<filter-name>characterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	<!--shiroFilter mapping -->
 	<filter-mapping>
 		<filter-name>shiroFilter</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -97,37 +80,27 @@
 		<filter-name>sitemesh</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	<!--Shiro Fitler mapping -->
-	<!-- Filter Mappings End -->
-	<!-- cxf Start -->
-	<servlet>   		
-    	<servlet-name>CXFServlet</servlet-name>
-    	<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>    	
-    	<load-on-startup>1</load-on-startup>
-    </servlet>
-   	<servlet-mapping>
-      	<servlet-name>CXFServlet</servlet-name>
-     	<url-pattern>/webService/*</url-pattern>
-    </servlet-mapping>
-    <!-- cxf  end -->
-
-
-	<!--Servlet Definitions Start -->
-	<!-- Spring Default DispatchServlet -->
+	<servlet>
+		<servlet-name>CXFServlet</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/webService/*</url-pattern>
+	</servlet-mapping>
 	<servlet>
 		<servlet-name>dispatcherServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-						classpath*:controller/dispatcher-servlet.xml,
-						 classpath*:quartz/quartzJob.xml <!-- 启动定时任务 -->
-			</param-value>
-			
+			classpath*:controller/dispatcher-servlet.xml,
+			classpath*:quartz/quartzJob.xml 
+	</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
 	<servlet>
 		<servlet-name>sitemeshServlet</servlet-name>
 		<servlet-class>com.newtouch.lion.web.sitemash.SitemeshFreemarkerDecoratorServlet</servlet-class>
@@ -149,9 +122,6 @@
 		<servlet-name>DruidStatView</servlet-name>
 		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
 	</servlet>
-	<!--Servlet Definitions End -->
-
-	<!--Servlet Mappings Start -->
 	<servlet-mapping>
 		<servlet-name>dispatcherServlet</servlet-name>
 		<url-pattern>*.htm</url-pattern>
@@ -168,17 +138,39 @@
 		<servlet-name>DruidStatView</servlet-name>
 		<url-pattern>/druid/*</url-pattern>
 	</servlet-mapping>
-	<!--Servlet Mappings End -->
-
-	<!-- Session超时定义,单位为分钟 -->
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
-	<!-- Welcome-File-List Start -->
 	<welcome-file-list>
 		<welcome-file>index.htm</welcome-file>
 		<welcome-file>login.htm</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- Welcome-File-List End -->
+	<servlet>
+		<display-name>Apache-Axis Servlet</display-name>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis.transport.http.AxisServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<display-name>Axis Admin Servlet</display-name>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>org.apache.axis.transport.http.AdminServlet</servlet-class>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/servlet/AdminServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

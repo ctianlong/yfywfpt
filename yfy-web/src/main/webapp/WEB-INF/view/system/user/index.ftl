@@ -52,20 +52,55 @@
 <div class="portlet light">
 	<div class="portlet-body">
 		<div class="row">
+		
+			<!-- 个人限定角色控制实现 -->
+			<@shiro.lacksRole name="PersonLimitRole">
 			<div class="col-md-12 margin-bottom-10">
 				<form id="queryform" class="form-horizontal">
-					<label class="control-label col-md-1" for="username" >用户名</label>
-					<div class="col-md-2">
-						<input class="form-control input-small" type="text" size="30" name="username" id="username"  placeholder="请输入用户名称"/>					
+				
+					<!-- 实现部门限定查询条件,第一种方法 ,这种方式需要触发查询按钮，会执行两次查询，第一次查询时仍会查出所有部门成员，不好,而且不能防止直接输入URL查询所有部门成员 -->
+					<!--
+					<@shiro.hasRole name="DepartmentLimitRole">
+						<input type="hidden" name="departmentId" value="<@shiro.principal property="departmentId"/>"/>
+					</@shiro.hasRole>
+					-->
+					
+					<!-- 实现部门限定查询条件,第二种方法,在 table 标签的 data-loadUrl 结尾加上如下的查询条件,这种方式只会查询一次对应部门的人员,但是不能防止直接输入URL查询所有部门成员 -->
+					<!-- 没有真的实现数据级别的权限控制,要实现数据级别权限控制,必须在 .../list.json 对应的控制器处理方法中判断角色,从而决定是否添加限定条件 -->
+					<!-- <@shiro.hasRole name="DepartmentLimitRole">?departmentId=<@shiro.principal property="departmentId"/></@shiro.hasRole> -->
+					
+					<label class="control-label col-md-1" for="querydepartmentId" >部门</label>
+					<@shiro.lacksRole name="DepartmentLimitRole">
+					<div class="col-md-3">
+						<input  id="querydepartmentId"  name="departmentId"  
+						 	  	  placeholder="请选择所属部门…"  type="text" 
+						 		  class="form-control input-small lion-combotree" data-loadURL="${base}/system/department/comboxtree.json" data-width="200px" data-height="300px"/>
 					</div>
-					<label class="control-label col-md-1" for="queryEmployeeCode" >员工号</label>
+					</@shiro.lacksRole>
+					
+					<@shiro.hasRole name="DepartmentLimitRole">
 					<div class="col-md-2">
-						<input class="form-control input-small" type="text" size="30" name="employeeCode" id="queryEmployeeCode"  placeholder="请输入员工号称"/>					
+						<input class="form-control input-small" type="text" size="30" value="${departmentName!}" disabled="disabled" />
 					</div>
+					</@shiro.hasRole>
+					
+					<label class="control-label col-md-1" for="queryusername" >用户名</label>
+					<div class="col-md-2">
+						<input class="form-control input-small" type="text" size="30" name="username" id="queryusername"  placeholder="请输入用户名"/>					
+					</div>
+					
+					<label class="control-label col-md-1" for="queryemployeeCode" >员工号</label>
+					<div class="col-md-2">
+						<input class="form-control input-small" type="text" size="30" name="employeeCode" id="queryemployeeCode"  placeholder="请输入员工号"/>					
+					</div>
+					
+					<!-- 去掉邮箱查询
 					<label class="control-label col-md-1" for="queryemail" >邮箱</label>
 					<div class="col-md-2">
 						<input class="form-control input-small" type="text" size="30" name="email" id="queryemail"  placeholder="请输入邮箱称"/>					
-					</div>	
+					</div>
+					-->
+					
 					<div class="col-md-1">
 						<a href="javascript:void(0)" class="btn blue" id="btnQuery"><i class="fa fa-search"></i>
 						 <@spring.message "common.query.btn.text"/> 
@@ -73,21 +108,34 @@
 					</div>
 				</form>
 			</div>
+			</@shiro.lacksRole>
 		
 			<div class="col-md-12" id="toolbar">
+				<@shiro.hasPermission name="system.user:add">
 				<a id="btnAdd" class="btn btn-sm yellow" data-toggle="modal" href="#basic">
 					<i class="fa fa-plus"></i>  <@spring.message "common.toolbar.btn.add.text"/> </a>
+				</@shiro.hasPermission>
+				<@shiro.hasPermission name="system.user:edit">
 				<a id="btnEdit" class="btn btn-sm red" role="button">
 					<i class="fa fa-edit"></i>
 					 <@spring.message "common.toolbar.btn.edit.text"/> 				 
 				</a>
+				</@shiro.hasPermission>
+				
 				<a href="javascript:void(0)" id="btnDelete" class="btn btn-sm purple"><i class="fa fa-times"></i> <@spring.message "common.toolbar.btn.delete.text"/> </a>
+				
+				<@shiro.hasPermission name="system.user:list">
 				<a href="javascript:void(0)" id="btnRefresh" class="btn btn-sm blue">
 					<i class="fa fa-refresh"></i> <@spring.message "common.toolbar.btn.reload.text"/> 
 				</a>
+				</@shiro.hasPermission>			
+				<@shiro.hasPermission name="system.user:export">
 				<a href="javascript:void(0)" id="btnExport"  class="btn btn-sm green">
 					<i class="fa  fa-file-excel-o"></i> <@spring.message "common.toolbar.btn.export.text"/> 
 				</a>
+				</@shiro.hasPermission>
+				
+				<@shiro.hasRole name="SystemAdminRole">
 				<a href="javascript:void(0)" id="btnAuth"  class="btn btn-sm  btn-primary">
 					<i class="fa  fa-gear"></i> 
 					<@spring.message "common.toolbar.btn.auth.text"/>  
@@ -104,6 +152,8 @@
 					<i class="fa fa-unlock-alt"></i> 
 					<@spring.message "common.toolbar.btn.reset.pwd.text"/>
 				</a>
+				</@shiro.hasRole>
+				
 				<a href="javascript:void(0)" id="btnDetails" class="btn btn-sm default">
 					<i class="fa  fa-th"></i> 
 					<@spring.message "common.toolbar.btn.details.text"/>
@@ -114,10 +164,11 @@
 				 data-loadUrl="${base}/system/user/list.json" data-checkbox="true" data-pageSize="10">
 					<thead>
 						<tr>
-						  <th class="table-checkbox" data-field='id' data-checkbox="true"  style="width:30px;">
-						 		<input type="checkbox" class="group-checkable" data-set="#sys_user_list_tb.checkboxes"  data-sortable="false" />
+						  <th class="table-checkbox" data-field='id' data-checkbox="true"   data-sortable="false" style="width:30px;">
+						 		<input type="checkbox" class="group-checkable" data-set="#sys_user_list_tb.checkboxes" />
 						 	</th>
-							<th data-field='username' data-sortDir="asc"    style="width:100px;">
+							
+							<th data-field='username' data-sortDir="asc" style="width:100px;">
 								用户名
 							</th>
 							<th data-field="realnameZh" style="width:100px;">
@@ -376,7 +427,7 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th>所属门部</th>
+									<th>所属部门</th>
 									<th>办公室电话</th>
 									<th>传真</th>
 									<th>邮编</th>
@@ -489,7 +540,7 @@
 												<div class="col-md-2">
 
 												 <div id="1"  class="input-group input-small date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
-														<input type="text"   id='credentialExpiredDate' name="credentialExpiredDate" class="form-control" placeholder="请选择密码有效期" maxlength="25" size="20" readonly="true" value="${credentialExpiredDate!}" />
+														<input type="text"   id='credentialExpiredDate' name="credentialExpiredDate" class="form-control" placeholder="请选择密码有效期" maxlength="25" size="20" readonly="readonly" value="${credentialExpiredDate!}" />
 													<span class="input-group-btn">
 														<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 														</span>
@@ -503,7 +554,7 @@
 												<div class="col-md-2">
 
 													 <div  id="2" class="input-group input-small date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
-														<input id="accountExpiredDate"  name="accountExpiredDate" type="text" class="form-control"  placeholder="请选择账户有效期"  maxlength="25" size="20"  readonly="true"  value="${accountExpiredDate!}" />
+														<input id="accountExpiredDate"  name="accountExpiredDate" type="text" class="form-control"  placeholder="请选择账户有效期"  maxlength="25" size="20"  readonly="readonly"  value="${accountExpiredDate!}" />
 														<span class="input-group-btn">
 														<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 														</span>

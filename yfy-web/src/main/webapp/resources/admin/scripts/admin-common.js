@@ -13,15 +13,18 @@
  * Dependencies:
  * jQuery.js; lion.js
  */
-;(function(){
+;
+//未登录 998 ，未授权 999,登录的url,
+var perms={unlogin:998,unauth:999,loginurl:'/login.htm'};
+//默认消息
+var defaultmsgs={title:'提示',msgfail:'操作失败', unselectedmsg:'请选择要删除记录',confirmmsg:'确认要删除此记录？'};
+
+(function(){
     'use strict';
      var exports={},util = this.util;
      this.web=exports||{};
-     //未登录 998 ，未授权 999,登录的url,
-     var perms={unlogin:'998',unauth:'999',loginurl:'/login.htm'};
-     //默认消息
-     var defaultmsgs={title:'提示',msgfail:'操作失败', unselectedmsg:'请选择要删除记录',confirmmsg:'确认要删除此记录？'};
-     //Ajax请求超时间为5秒
+     
+   //Ajax请求超时间为5秒
      exports.timeout=5000;
      //Ajax请求函数
      var ajaxoptions={
@@ -123,15 +126,17 @@
      function ajaxError(errorfn,xhr,status,error){
         //请求未登录和未授权的情况
         //Metronic.unblockUI();
+    	//当没有权限或未登陆时，error传进来为空，状态码存在xhr的status中    by ctl
+    	 error=xhr.status;
         if(error===perms.unlogin){
               //未登录情况，点击确定新登录
-            bootbox.alert('<span class="red">您未登录到信息，点击“确定”后，将进入用户登录页面.</span>',
+            bootbox.alert('<span class="red">您未登录到系统，点击“确定”后，将进入用户登录页面.</span>',
               function() {
                      lion.util.reload();
               });
         }else if(error===perms.unauth){
               //提示没有权限访问该资源
-              util.warning(defaultmsgs.title,'您的访问功能未等到授权');
+              util.warning(defaultmsgs.title,'您的操作未得到授权');
         }else{
             if(errorfn===$.noop){
                 util.error(defaultmsgs.title,'网络连接异常');
@@ -220,5 +225,17 @@
 
 /**全局请求错误*/
 function errorRequest(xhr,status,error){
-    util.error(defaultmsgs.title,'网络连接异常');
+	 error=xhr.status;
+     if(error===perms.unlogin){
+           //未登录情况，点击确定新登录
+         bootbox.alert('<span class="red">您未登录到系统，点击“确定”后，将进入用户登录页面.</span>',
+           function() {
+                  lion.util.reload();
+           });
+     }else if(error===perms.unauth){
+           //提示没有权限访问该资源
+    	 lion.util.warning(defaultmsgs.title,'您的操作未得到授权');
+     }else{
+         lion.util.error(defaultmsgs.title,'网络连接异常');
+     }
 }

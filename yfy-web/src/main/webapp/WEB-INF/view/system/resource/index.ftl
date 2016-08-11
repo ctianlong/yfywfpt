@@ -69,19 +69,19 @@
 				url: '${base}/system/resource/list.json',               
                 rownumbers: true,
                 pagination: false,
-                pageSize: 15,
+                pageSize: 20,
                 pageList: [5,10,15,30],
                 idField: 'id',
                 treeField: 'nameZh'
             ">
 				<thead>
 					<tr>
-						<th field="id"  width="10" align="center" halign="center"checkbox="true"sortable="true"order="asc">id</th>
-				 		<th field="nameZh" width="80" align="left" halign="left"sortable="true"order="asc">资源名称(中文)</th>
-				 		<th field="type" width="40" align="left" halign="left"sortable="true"order="asc" formatter="formatterCodeResource">资源类型</th>
-				 		<th field="path"   width="200" align=""left"" halign="left"sortable="true"order="asc">路径</th>
-				 		<th field="permission"  width="80" align="left" halign="center"sortable="true"order="asc" >权限</th>
-				 		<th field="seqNum"  width="20" align="left" halign="center"sortable="true"order="asc">排序</th>
+						<th field="id"  width="10" align="center" halign="center" checkbox="true" sortable="true" order="asc">id</th>
+				 		<th field="nameZh" width="80" align="left" halign="left" sortable="true" order="asc">资源名称(中文)</th>
+				 		<th field="type" width="30" align="left" halign="left" sortable="true" order="asc" formatter="formatterCodeResource">资源类型</th>
+				 		<th field="path"   width="170" align=""left"" halign="left" sortable="true" order="asc">路径</th>
+				 		<th field="permission"  width="120" align="left" halign="center" sortable="true" order="asc" >权限</th>
+				 		<th field="seqNum"  width="20" align="left" halign="center" sortable="true" order="asc">排序</th>
 					</tr>
 				</thead>
 			</table>
@@ -187,7 +187,7 @@
 														<label class="col-md-2 control-label">资源描述</label>
 														<div class="col-md-4">
 															<div class="input-group">
-																<input type="text" name="value" class="form-control" placeholder="请输入资源描述" maxlength="255" size="30"/>
+																<input type="text" name="description" class="form-control" placeholder="请输入资源描述" maxlength="255" size="30"/>
 															</div>
 														</div>
 													</div>

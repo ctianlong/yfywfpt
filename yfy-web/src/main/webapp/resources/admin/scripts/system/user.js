@@ -209,11 +209,11 @@ $(function() {
 	 */
 	 $('#btnQuery').click(function(){
         //添加查询参数
-	      userdg.datagrids({querydata:queryForm.serializeObject()});
-	      //重新加载数据
-	      userdg.datagrids('reload'); 
+	     userdg.datagrids({querydata:queryForm.serializeObject()});
+	     //重新加载数据
+	     userdg.datagrids('reload'); 
 	 });
- 
+	 
 	 //刷新
 	 $('#btnRefresh').on('click',function(){
 		 userdg.datagrids('reload'); 
@@ -304,8 +304,8 @@ $(function() {
 	 $('#btnExport').on('click',function(){
 	 var params=queryForm.serialize(),
         dgtableId=userdg.attr('id');
-    lion.web.exportfn({url:'export.json',data:params,tableId:dgtableId});
-    return;
+	    lion.web.exportfn({url:'export.json',data:params,tableId:dgtableId});
+	    return;
 	 });	
 });
 
@@ -379,7 +379,6 @@ function submitForm(frm){
   if(lion.util.isEmpty(id)){
       lion.web.post({url:'add.json',data:param,success:successAddFrm});
   }else{
-    console.dir('dd');
       lion.web.post({url:'edit.json',data:param,success:successEditFrm});
   }
 }
@@ -528,12 +527,13 @@ handleVForm=function(vForm,submitCallBackfn){
             label.closest('.form-filed').removeClass('has-error'); 
         },
         errorPlacement:function(error,element){
+        	error.insertAfter(element);
         	//当遇到combo的对话框架的时，修改它的显示位置
-        	if (element.hasClass('lion-combotree')){
-        		  error.insertAfter(element.parent().find('div.btn-group'));
-        	}else{
-        		error.insertAfter(element);
-        	}
+//        	if (element.hasClass('lion-combotree')){
+//        		  error.insertAfter(element.parent().find('div.btn-group'));
+//        	}else{
+//        		error.insertAfter(element);
+//        	}
         },
         submitHandler: function (form) {
             addSuccess.show();

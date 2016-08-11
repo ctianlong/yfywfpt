@@ -2,10 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<!-- 该父POM无法从本地仓库中查找？？？有待理解，因此只能在该配置文件中配置一个newtouch的远程仓库 -->
 	<parent>
 		<groupId>com.newtouch.lion</groupId>
 		<artifactId>com.newtouch.lion-parent</artifactId>
 		<version>1.0</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.newtouch.yfy</groupId>
 	<artifactId>yfy-parent</artifactId>
@@ -33,6 +35,7 @@
 		<axis-jaxrpc.version>1.4</axis-jaxrpc.version>
 		<quartz.version>1.6.1</quartz.version>
 		<cxf.version>2.7.3</cxf.version>
+		<c3p0.version>0.9.1.2</c3p0.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -160,4 +163,22 @@
 	    <version>${cxf.version}</version>  
 	</dependency>    
 	</dependencies>
+	
+	<!--  -->
+	<repositories>  
+        <repository>  
+            <id>newtouch</id>  
+            <name>Newtouch Repository</name>  
+            <url>http://maven.newtouch.com/content/groups/public/</url>  
+            <releases>  
+                <updatePolicy>daily</updatePolicy><!-- never,always,interval n -->  
+                <enabled>true</enabled>  
+                <checksumPolicy>warn</checksumPolicy><!-- fail,ignore -->  
+            </releases>  
+            <snapshots>  
+                <enabled>false</enabled>  
+            </snapshots>  
+            <layout>default</layout>  
+        </repository>  
+    </repositories>
 </project>

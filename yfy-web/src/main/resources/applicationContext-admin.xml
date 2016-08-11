@@ -7,10 +7,10 @@
 		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 	<!-- common Start -->
+	<import resource="classpath:common/applicationContext-properties.xml" />
 	<import resource="classpath:common/applicationContext-scan.xml" />
 	<import resource="classpath:common/applicationContext-common.xml" />
 	<import resource="classpath:common/applicationContext-datasource.xml" />
-	<import resource="classpath:common/applicationContext-properties.xml" />
 	<!-- common End -->
 	
 	<!-- Cache Start -->
@@ -27,4 +27,6 @@
 	<!-- shiro End--> 
 	<import resource="classpath:cxf-servlet.xml" />
 	<import resource="classpath:activemq/applicationContext-activemq.xml"/>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/> 
 </beans>
